@@ -177,14 +177,21 @@ if __name__ == '__main__':
 	encoding = sys.argv[3]
 	version = sys.argv[4]
 
-	with open("notor/NotoRounded-Condensed{}.otd".format(weight), 'rb') as baseFile:
+	isOldstyle = region == 'OSF'
+	
+	if isOldstyle:
+		region2 = 'Oldstyle'
+	else:
+		region2 = 'Classic' if region == 'CL' else region
+
+	with open("noto/{}/NotoRounded{}-Condensed{}.otd".format('osf' if isOldstyle else 'rounded', 'OSF' if isOldstyle else '', weight), 'rb') as baseFile:
 		baseFont = json.loads(baseFile.read().decode('UTF-8', errors='replace'))
 
 	with open("rhr/ResourceHanRounded{}-{}.otd".format(region, weight), 'rb') as asianFile:
 		asianFont = json.loads(asianFile.read().decode('UTF-8', errors = 'replace'))
 
 	baseFont['OS_2']['ulCodePageRange1'][encoding] = True
-	NameFont(baseFont, 'Classic' if region == 'CL' else region, weight, version)
+	NameFont(baseFont, region2, weight, version)
 
 	for (uniId, glyphName) in asianFont['cmap'].items():
 		if uniId not in baseFont['cmap'].keys():

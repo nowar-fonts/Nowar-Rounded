@@ -177,10 +177,10 @@ if __name__ == '__main__':
 	encoding = sys.argv[3]
 	version = sys.argv[4]
 
-	with open("notor/NotoRounded-SemiCondensed{}.otd".format(weight), 'rb') as baseFile:
+	with open("noto/rounded/NotoRounded-SemiCondensed{}.otd".format(weight), 'rb') as baseFile:
 		baseFont = json.loads(baseFile.read().decode('UTF-8', errors='replace'))
 
-	with open("notor/NotoRounded-Condensed{}.otd".format(weight), 'rb') as numFile:
+	with open("noto/rounded/NotoRounded-Condensed{}.otd".format(weight), 'rb') as numFile:
 		numFont = json.loads(numFile.read().decode('UTF-8', errors='replace'))
 
 	with open("rhr/ResourceHanRounded{}-{}.otd".format(region, weight), 'rb') as asianFile:

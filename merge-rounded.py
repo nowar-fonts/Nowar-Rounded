@@ -177,7 +177,7 @@ if __name__ == '__main__':
 	encoding = sys.argv[3]
 	version = sys.argv[4]
 
-	with open("notor/NotoRounded-SemiCondensed{}.otd".format(weight), 'rb') as baseFile:
+	with open("noto/rounded/NotoRounded-SemiCondensed{}.otd".format(weight), 'rb') as baseFile:
 		baseFont = json.loads(baseFile.read().decode('UTF-8', errors='replace'))
 
 	with open("rhr/ResourceHanRounded{}-{}.otd".format(region, weight), 'rb') as asianFile:

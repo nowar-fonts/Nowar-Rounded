@@ -174,7 +174,7 @@ if __name__ == '__main__':
 	weight = sys.argv[1]
 	version = sys.argv[2]
 
-	with open("notor/NotoRounded-Condensed{}.otd".format(weight), 'rb') as baseFile:
+	with open("noto/rounded/NotoRounded-Condensed{}.otd".format(weight), 'rb') as baseFile:
 		baseFont = json.loads(baseFile.read().decode('UTF-8', errors='replace'))
 
 	NameFont(baseFont, weight, version)

@@ -1,4 +1,6 @@
 *.otd
-rhr/*.ttf
-nowar/*.ttf
+*.ttf
 *.7z
+__pycache__/
+/??-?/
+/OSF-?/

@@ -14,7 +14,7 @@ This is Nowar Rounded, font packs for _World of Warcraft_ that support all langu
 
 [Latest release](https://github.com/CyanoHao/Nowar-Rounded/releases)
 
-Nowar Rounded is provided in 4 weights and 4 regional variants.
+Nowar Rounded is provided in 4 weights and 5 regional variants.
 
 ### Weights
 
@@ -28,27 +28,26 @@ Nowar Rounded is provided in 4 weights and 4 regional variants.
 
 The shape of Chinese characters follows different standards in different regional variants.
 
-| Regional Variants \ Language | English and Western European | Русский        | 简体中文       | 繁體中文  | 한국어  |
-| ---------------------------- | ---------------------------- | -------------- | -------------- | --------- | ------- |
-| CN                           | Mainland China               | Mainland China | Mainland China | Taiwan    | Classic |
-| TW                           | Taiwan                       | Taiwan         | Mainland China | Taiwan    | Classic |
-| HK                           | Hong Kong                    | Hong Kong      | Mainland China | Hong Kong | Classic |
-| CL                           | Classic                      | Classic        | Classic        | Classic   | Classic |
+| Regional Variants \ Language | European                     | 简体中文       | 繁體中文  | 한국어  |
+| ---------------------------- | ---------------------------- | -------------- | --------- | ------- |
+| CN                           | Mainland China               | Mainland China | Taiwan    | Classic |
+| TW                           | Taiwan                       | Mainland China | Taiwan    | Classic |
+| HK                           | Hong Kong                    | Mainland China | Hong Kong | Classic |
+| CL                           | Classic                      | Classic        | Classic   | Classic |
+| OSF                          | Classic with Oldstyle Figure | Classic        | Classic   | Classic |
+
+* European: English, Español (AL), Português, Deutsch, Español (EU), Français, Italiano, and Русский.
 
 ## How to Build
 
 Dependencies: Python and [otfcc](https://github.com/caryll/otfcc).
 
-Put Resource Han Rounded TTF files to `rhr/`, then run
-```bash
-./configure
-make -j<threads>
-```
+Put Resource Han Rounded TTF files to `rhr/`, and Noto Sans TTF files to `noto/sans`, then just `make` it.
 
 ## Credit
 
 This project is based on [Sarasa Gothic](https://github.com/be5invis/Sarasa-Gothic) by **Belleve Invis**.
 
-Latin, Greek and Cyrillic characters are from Noto Round, which is derived from [Noto Sans](https://github.com/googlei18n/noto-fonts) by **Google**.
+Latin, Greek and Cyrillic characters are from Noto Round, which is a part of Nowar Rounded project. Noto Rounded is derived from [Noto Sans](https://github.com/googlei18n/noto-fonts) by **Google**.
 
 CJK Ideographs, Kana and Hangul are from [Resource Han Rounded](https://github.com/CyanoHao/Resource-Han-Rounded), which is derived from [Source Han Sans](https://github.com/adobe-fonts/source-han-sans) by **Adobe**.
