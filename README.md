@@ -28,15 +28,16 @@ Nowar Rounded is provided in 4 weights and 5 regional variants.
 
 The shape of Chinese characters follows different standards in different regional variants.
 
-| Regional Variants \ Language | European                     | 简体中文       | 繁體中文  | 한국어  |
-| ---------------------------- | ---------------------------- | -------------- | --------- | ------- |
-| CN                           | Mainland China               | Mainland China | Taiwan    | Classic |
-| TW                           | Taiwan                       | Mainland China | Taiwan    | Classic |
-| HK                           | Hong Kong                    | Mainland China | Hong Kong | Classic |
-| CL                           | Classic                      | Classic        | Classic   | Classic |
-| OSF                          | Classic with Oldstyle Figure | Classic        | Classic   | Classic |
+|     | European                      | 简体中文       | 繁體中文  | 한국어  |
+| --- | ----------------------------- | -------------- | --------- | ------- |
+| CN  | Mainland China (UI)           | Mainland China | Taiwan    | Classic |
+| TW  | Taiwan (UI)                   | Mainland China | Taiwan    | Classic |
+| HK  | Hong Kong (UI)                | Mainland China | Hong Kong | Classic |
+| CL  | Classic (UI)                  | Classic        | Classic   | Classic |
+| OSF | Classic (UI, Oldstyle Figure) | Classic        | Classic   | Classic |
 
 * European: English, Español (AL), Português, Deutsch, Español (EU), Français, Italiano, and Русский.
+* UI: Ambiguous punctations are treated as Western; Kana are proportional.
 
 ## How to Build
 

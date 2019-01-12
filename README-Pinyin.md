@@ -1,6 +1,6 @@
 [English](README.md) [简体中文](README-Hans.md) [繁體中文](README-Hant.md) **Hànyǔ Pīnyīn**
 
-*Zhùshì: zhè shì yī piān cèshì Kuòzhǎn Lāding Zìfú de wéndàng.*
+*Zhùshì: zhè shì yī piān cèshì Kuòzhǎn Lādīng Zìfú de wéndàng.*
 
 # Yǒu’ài Yuánjiǎo Zìtǐ
 
@@ -30,12 +30,13 @@ Yǒu’ài Yuánjiǎo Zìtǐ yǒu 4 zhǒng zìtǐ cūxì hé 5 zho�
 
 Bù tóng de dìqū biànhuà de zìtǐ xíngtài cǎiyòng le bù tóng de zìtǐ xíngtài biāozhǔn.
 
-|      | Xīfāng yǔyán      | Jiǎntǐ zhōngwén | Fántǐ zhōngwén | Hánguó yǔ |
-| ---- | --------------------- | ------------ | -------- | -------- |
-| CN   | Zhōngguó dàlù zìtǐ xíngtài          | Zhōngguó dàlù zìtǐ xíngtài | Táiwān zìtǐ xíngtài | Chuántǒng de zìtǐ xíngtài |
-| TW   | Táiwān zìtǐ xíngtài              | Zhōngguó dàlù zìtǐ xíngtài | Táiwān zìtǐ xíngtài | Chuántǒng de zìtǐ xíngtài |
-| HK   | Xiānggǎng zìtǐ xíngtài              | Zhōngguó dàlù zìtǐ xíngtài | Xiānggǎng zìtǐ xíngtài | Chuántǒng de zìtǐ xíngtài |
-| CL   | Chuántǒng de zìtǐ xíngtài              | Chuántǒng de zìtǐ xíngtài     | Chuántǒng de zìtǐ xíngtài | Chuántǒng de zìtǐ xíngtài |
-| OSF  | Chuántǒng de zìtǐ xíngtài (bù duìqí jīzhǔnxiàn de shùzì) | Chuántǒng de zìtǐ xíngtài     | Chuántǒng de zìtǐ xíngtài | Chuántǒng de zìtǐ xíngtài |
+|     | Xīfāng yǔyán | Jiǎntǐ zhōngwén | Fántǐ zhōngwén | Hánguó yǔ |
+| --- | --- | --- | --- | --- |
+| CN  | Zhōngguó dàlù zìtǐ xíngtài (UI xíngshì) | Zhōngguó dàlù zìtǐ xíngtài | Táiwān zìtǐ xíngtài | Chuántǒng de zìtǐ xíngtài |
+| TW  | Táiwān zìtǐ xíngtài (UI xíngshì) | Zhōngguó dàlù zìtǐ xíngtài | Táiwān zìtǐ xíngtài | Chuántǒng de zìtǐ xíngtài |
+| HK  | Xiānggǎng zìtǐ xíngtài (UI xíngshì) | Zhōngguó dàlù zìtǐ xíngtài | Xiānggǎng zìtǐ xíngtài | Chuántǒng de zìtǐ xíngtài |
+| CL  | Chuántǒng de zìtǐ xíngtài (UI xíngshì) | Chuántǒng de zìtǐ xíngtài | Chuántǒng de zìtǐ xíngtài | Chuántǒng de zìtǐ xíngtài |
+| OSF | Chuántǒng de zìtǐ xíngtài (UI xíngshì, bù duìqí jīzhǔnxiàn de shùzì) | Chuántǒng de zìtǐ xíngtài | Chuántǒng de zìtǐ xíngtài | Chuántǒng de zìtǐ xíngtài |
 
-* Xīfāng wénzì: Yīngyǔ, Xībānyá yǔ (Lādīng Měizhōu), Pútáoyá yǔ, Déyǔ, Xībānyá yǔ (Ōuzhōu), Fǎyǔ, Yìdàlì yǔ, Éyǔ.
+* Xīfāng yǔyán: Yīngyǔ, Xībānyá yǔ (Lādīng Měizhōu), Pútáoyá yǔ, Déyǔ, Xībānyá yǔ (Ōuzhōu), Fǎyǔ, Yìdàlì yǔ, Éyǔ.
+* UI xíngshì: bèi zhōngwén hé xīfāng wénzì gòngyòng de biāodiǎn fúhào, dōu bèi dāngzuò xīfāng wénzì de biāodiǎn fúhào; Rìyǔ jiǎmíng de kuāndù shì chéngbǐlì de.

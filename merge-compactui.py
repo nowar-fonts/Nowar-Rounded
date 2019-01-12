@@ -1,6 +1,8 @@
 import sys
 import json
 
+from fontlib.pkana import ProportionalizeKana
+from fontlib.merge import MergeBelow
 
 def NameFont(font, region, weight, version):
 
@@ -193,11 +195,8 @@ if __name__ == '__main__':
 	baseFont['OS_2']['ulCodePageRange1'][encoding] = True
 	NameFont(baseFont, region2, weight, version)
 
-	for (uniId, glyphName) in asianFont['cmap'].items():
-		if uniId not in baseFont['cmap'].keys():
-			baseFont['cmap'][uniId] = glyphName
-			if glyphName not in baseFont['glyf'].keys():
-				baseFont['glyf'][glyphName] = asianFont['glyf'][glyphName]
+	ProportionalizeKana(asianFont)
+	MergeBelow(baseFont, asianFont)
 
 	outStr = json.dumps(baseFont, ensure_ascii=False)
 	with open("nowar/{}-NowarCompactRoundedUI-{}-{}.otd".format(encoding, region, weight), 'w') as outFile:

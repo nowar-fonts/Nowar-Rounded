@@ -1,5 +1,3 @@
-ver=0.1.2
-
 weight=(ExtraLight Light Regular Medium Bold ExtraBold)
 nowarWeight=(Light Regular Medium Bold)
 
@@ -12,7 +10,9 @@ regionNameMap=([CN]=CN [TW]=TW [HK]=HK [CL]=Classic [OSF]=Oldstyle)
 encoding=(unspec gbk big5 korean)
 
 cat >Makefile <<EOF
-all: $(echo {CN,TW,HK,CL,OSF}-{L,R,M,B}-$ver.7z)
+VERSION = 0.1.3
+
+all: $(echo {CN,TW,HK,CL,OSF}-{L,R,M,B}-\${VERSION}.7z)
 
 clean:
 	-rm -rf noto/*/*.otd noto/rounded/ noto/osf/
@@ -28,25 +28,25 @@ nowar/NowarCompactRounded-$w.ttf: nowar/NowarCompactRounded-$w.otd
 	otfccbuild -O3 \$< -o \$@
 nowar/NowarCompactRounded-$w.otd: noto/rounded/NotoRounded-Condensed$w.otd
 	mkdir -p nowar/
-	python rename-morph.py $w $ver
+	python rename-morph.py $w \${VERSION}
 
 nowar/NowarCompactRounded-OSF-$w.ttf: nowar/NowarCompactRounded-OSF-$w.otd
 	otfccbuild -O3 \$< -o \$@
 nowar/NowarCompactRounded-OSF-$w.otd: noto/osf/NotoRoundedOSF-Condensed$w.otd
 	mkdir -p nowar/
-	python rename-morph-osf.py $w $ver
+	python rename-morph-osf.py $w \${VERSION}
 
 nowar/NowarWideRounded-$w.ttf: nowar/NowarWideRounded-$w.otd
 	otfccbuild -O3 \$< -o \$@
 nowar/NowarWideRounded-$w.otd: noto/rounded/NotoRounded-$w.otd
 	mkdir -p nowar/
-	python rename-skurri.py $w $ver
+	python rename-skurri.py $w \${VERSION}
 
 nowar/NowarWideRounded-OSF-$w.ttf: nowar/NowarWideRounded-OSF-$w.otd
 	otfccbuild -O3 \$< -o \$@
 nowar/NowarWideRounded-OSF-$w.otd: noto/osf/NotoRoundedOSF-$w.otd
 	mkdir -p nowar/
-	python rename-skurri-osf.py $w $ver
+	python rename-skurri-osf.py $w \${VERSION}
 
 noto/osf/NotoRoundedOSF-Condensed$w.otd:
 	cd noto; make osf/NotoRoundedOSF-Condensed$w.otd
@@ -83,13 +83,13 @@ nowar/$e-NowarCompactRoundedUI-$r-$w.ttf: nowar/$e-NowarCompactRoundedUI-$r-$w.o
 	otfccbuild -O3 \$< -o \$@
 nowar/$e-NowarCompactRoundedUI-$r-$w.otd: noto/$latinvar/NotoRounded$osf-Condensed$w.otd rhr/ResourceHanRounded$r-$w.otd
 	mkdir -p nowar/
-	python merge-compactui.py $r $w $e $ver
+	python merge-compactui.py $r $w $e \${VERSION}
 
 nowar/$e-NowarWideRoundedUI-$r-$w.ttf: nowar/$e-NowarWideRoundedUI-$r-$w.otd
 	otfccbuild -O3 \$< -o \$@
 nowar/$e-NowarWideRoundedUI-$r-$w.otd: noto/$latinvar/NotoRounded$osf-$w.otd rhr/ResourceHanRounded$r-$w.otd
 	mkdir -p nowar/
-	python merge-wideui.py $r $w $e $ver
+	python merge-wideui.py $r $w $e \${VERSION}
 
 EOF
 
@@ -98,19 +98,19 @@ nowar/$e-NowarCompactRounded-$r-$w.ttf: nowar/$e-NowarCompactRounded-$r-$w.otd
 	otfccbuild -O3 \$< -o \$@
 nowar/$e-NowarCompactRounded-$r-$w.otd: noto/$latinvar/NotoRounded$osf-Condensed$w.otd rhr/ResourceHanRounded$r-$w.otd
 	mkdir -p nowar/
-	python merge-compact.py $r $w $e $ver
+	python merge-compact.py $r $w $e \${VERSION}
 
 nowar/$e-NowarRounded-$r-$w.ttf: nowar/$e-NowarRounded-$r-$w.otd
 	otfccbuild -O3 \$< -o \$@
 nowar/$e-NowarRounded-$r-$w.otd: noto/$latinvar/NotoRounded$osf-SemiCondensed$w.otd rhr/ResourceHanRounded$r-$w.otd
 	mkdir -p nowar/
-	python merge-rounded.py $r $w $e $ver
+	python merge-rounded.py $r $w $e \${VERSION}
 
 nowar/$e-NowarWideRounded-$r-$w.ttf: nowar/$e-NowarWideRounded-$r-$w.otd
 	otfccbuild -O3 \$< -o \$@
 nowar/$e-NowarWideRounded-$r-$w.otd: noto/$latinvar/NotoRounded$osf-$w.otd rhr/ResourceHanRounded$r-$w.otd
 	mkdir -p nowar/
-	python merge-wide.py $r $w $e $ver
+	python merge-wide.py $r $w $e \${VERSION}
 
 EOF
 
@@ -119,7 +119,7 @@ nowar/$e-NowarWarcraftRounded-$r-$w.ttf: nowar/$e-NowarWarcraftRounded-$r-$w.otd
 	otfccbuild -O3 \$< -o \$@
 nowar/$e-NowarWarcraftRounded-$r-$w.otd: noto/$latinvar/NotoRounded$osf-SemiCondensed$w.otd noto/$latinvar/NotoRounded$osf-Condensed$w.otd rhr/ResourceHanRounded$r-$w.otd
 	mkdir -p nowar/
-	python merge-warcraft.py $r $w $e $ver
+	python merge-warcraft.py $r $w $e \${VERSION}
 
 EOF
 		done
@@ -268,7 +268,7 @@ for w in ${nowarWeight[@]}; do
 		koreanDisplayFont=$(getKoreanDisplayFont $rv $w)
 
 		cat >>Makefile <<EOF
-$target-$ver.7z: $target/Fonts/MORPHEUS.ttf $target/Fonts/FRIZQT__.ttf $target/Fonts/ARIALN.ttf $target/Fonts/skurri.ttf \\
+$target-\${VERSION}.7z: $target/Fonts/MORPHEUS.ttf $target/Fonts/FRIZQT__.ttf $target/Fonts/ARIALN.ttf $target/Fonts/skurri.ttf \\
                  $target/Fonts/MORPHEUS_CYR.ttf $target/Fonts/FRIZQT___CYR.ttf $target/Fonts/SKURRI_CYR.ttf \\
                  $target/Fonts/ARKai_C.ttf $target/Fonts/ARKai_T.ttf $target/Fonts/ARHei.ttf \\
                  $target/Fonts/bKAI00M.ttf $target/Fonts/bHEI00M.ttf $target/Fonts/bHEI01B.ttf $target/Fonts/blei00d.ttf \\
