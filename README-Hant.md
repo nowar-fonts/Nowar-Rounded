@@ -1,4 +1,4 @@
-[English](README.md) [简体中文](README-Hans.md) **繁體中文**
+[English](README.md) [简体中文](README-Hans.md) **繁體中文** [Hànyǔ Pīnyīn](README-Pinyin.md)
 
 # 有愛圓體
 

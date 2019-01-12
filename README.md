@@ -1,4 +1,4 @@
-**English** [简体中文](README-Hans.md) [繁體中文](README-Hant.md)
+**English** [简体中文](README-Hans.md) [繁體中文](README-Hant.md) [Hànyǔ Pīnyīn](README-Pinyin.md)
 
 # Nowar Rounded
 
