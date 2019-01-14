@@ -1,11 +1,22 @@
 VERSION = 0.1.3
 
-all: CN-L-${VERSION}.7z CN-R-${VERSION}.7z CN-M-${VERSION}.7z CN-B-${VERSION}.7z TW-L-${VERSION}.7z TW-R-${VERSION}.7z TW-M-${VERSION}.7z TW-B-${VERSION}.7z HK-L-${VERSION}.7z HK-R-${VERSION}.7z HK-M-${VERSION}.7z HK-B-${VERSION}.7z CL-L-${VERSION}.7z CL-R-${VERSION}.7z CL-M-${VERSION}.7z CL-B-${VERSION}.7z OSF-L-${VERSION}.7z OSF-R-${VERSION}.7z OSF-M-${VERSION}.7z OSF-B-${VERSION}.7z
+all: SharedMedia-NowarRounded-${VERSION}.7z CN-L-${VERSION}.7z CN-R-${VERSION}.7z CN-M-${VERSION}.7z CN-B-${VERSION}.7z TW-L-${VERSION}.7z TW-R-${VERSION}.7z TW-M-${VERSION}.7z TW-B-${VERSION}.7z HK-L-${VERSION}.7z HK-R-${VERSION}.7z HK-M-${VERSION}.7z HK-B-${VERSION}.7z CL-L-${VERSION}.7z CL-R-${VERSION}.7z CL-M-${VERSION}.7z CL-B-${VERSION}.7z OSF-L-${VERSION}.7z OSF-R-${VERSION}.7z OSF-M-${VERSION}.7z OSF-B-${VERSION}.7z
 
 clean:
 	-rm -rf noto/*/*.otd noto/rounded/ noto/osf/
 	-rm -rf rhr/*.otd nowar/*.otd
 	-rm -rf CN-L/ CN-R/ CN-M/ CN-B/ TW-L/ TW-R/ TW-M/ TW-B/ HK-L/ HK-R/ HK-M/ HK-B/ CL-L/ CL-R/ CL-M/ CL-B/ OSF-L/ OSF-R/ OSF-M/ OSF-B/
+	-rm -rf NowarRoundedTypeface/
+
+SharedMedia-NowarRounded-${VERSION}.7z: nowar/unspec-NowarWideRoundedUI-CN-Light.ttf nowar/unspec-NowarWideRoundedUI-CN-Regular.ttf nowar/unspec-NowarWideRoundedUI-CN-Medium.ttf nowar/unspec-NowarWideRoundedUI-CN-Bold.ttf nowar/unspec-NowarWideRoundedUI-TW-Light.ttf nowar/unspec-NowarWideRoundedUI-TW-Regular.ttf nowar/unspec-NowarWideRoundedUI-TW-Medium.ttf nowar/unspec-NowarWideRoundedUI-TW-Bold.ttf nowar/unspec-NowarWideRoundedUI-HK-Light.ttf nowar/unspec-NowarWideRoundedUI-HK-Regular.ttf nowar/unspec-NowarWideRoundedUI-HK-Medium.ttf nowar/unspec-NowarWideRoundedUI-HK-Bold.ttf nowar/unspec-NowarWideRoundedUI-JP-Light.ttf nowar/unspec-NowarWideRoundedUI-JP-Regular.ttf nowar/unspec-NowarWideRoundedUI-JP-Medium.ttf nowar/unspec-NowarWideRoundedUI-JP-Bold.ttf nowar/unspec-NowarWideRoundedUI-CL-Light.ttf nowar/unspec-NowarWideRoundedUI-CL-Regular.ttf nowar/unspec-NowarWideRoundedUI-CL-Medium.ttf nowar/unspec-NowarWideRoundedUI-CL-Bold.ttf nowar/unspec-NowarWideRoundedUI-OSF-Light.ttf nowar/unspec-NowarWideRoundedUI-OSF-Regular.ttf nowar/unspec-NowarWideRoundedUI-OSF-Medium.ttf nowar/unspec-NowarWideRoundedUI-OSF-Bold.ttf nowar/unspec-NowarCompactRoundedUI-CN-Light.ttf nowar/unspec-NowarCompactRoundedUI-CN-Regular.ttf nowar/unspec-NowarCompactRoundedUI-CN-Medium.ttf nowar/unspec-NowarCompactRoundedUI-CN-Bold.ttf nowar/unspec-NowarCompactRoundedUI-TW-Light.ttf nowar/unspec-NowarCompactRoundedUI-TW-Regular.ttf nowar/unspec-NowarCompactRoundedUI-TW-Medium.ttf nowar/unspec-NowarCompactRoundedUI-TW-Bold.ttf nowar/unspec-NowarCompactRoundedUI-HK-Light.ttf nowar/unspec-NowarCompactRoundedUI-HK-Regular.ttf nowar/unspec-NowarCompactRoundedUI-HK-Medium.ttf nowar/unspec-NowarCompactRoundedUI-HK-Bold.ttf nowar/unspec-NowarCompactRoundedUI-JP-Light.ttf nowar/unspec-NowarCompactRoundedUI-JP-Regular.ttf nowar/unspec-NowarCompactRoundedUI-JP-Medium.ttf nowar/unspec-NowarCompactRoundedUI-JP-Bold.ttf nowar/unspec-NowarCompactRoundedUI-CL-Light.ttf nowar/unspec-NowarCompactRoundedUI-CL-Regular.ttf nowar/unspec-NowarCompactRoundedUI-CL-Medium.ttf nowar/unspec-NowarCompactRoundedUI-CL-Bold.ttf nowar/unspec-NowarCompactRoundedUI-OSF-Light.ttf nowar/unspec-NowarCompactRoundedUI-OSF-Regular.ttf nowar/unspec-NowarCompactRoundedUI-OSF-Medium.ttf nowar/unspec-NowarCompactRoundedUI-OSF-Bold.ttf nowar/gbk-NowarRounded-CN-Light.ttf nowar/gbk-NowarRounded-CN-Regular.ttf nowar/gbk-NowarRounded-CN-Medium.ttf nowar/gbk-NowarRounded-CN-Bold.ttf nowar/gbk-NowarWideRounded-CN-Light.ttf nowar/gbk-NowarWideRounded-CN-Regular.ttf nowar/gbk-NowarWideRounded-CN-Medium.ttf nowar/gbk-NowarWideRounded-CN-Bold.ttf nowar/gbk-NowarCompactRounded-CN-Light.ttf nowar/gbk-NowarCompactRounded-CN-Regular.ttf nowar/gbk-NowarCompactRounded-CN-Medium.ttf nowar/gbk-NowarCompactRounded-CN-Bold.ttf nowar/big5-NowarRounded-TW-Light.ttf nowar/big5-NowarRounded-TW-Regular.ttf nowar/big5-NowarRounded-TW-Medium.ttf nowar/big5-NowarRounded-TW-Bold.ttf nowar/big5-NowarWideRounded-TW-Light.ttf nowar/big5-NowarWideRounded-TW-Regular.ttf nowar/big5-NowarWideRounded-TW-Medium.ttf nowar/big5-NowarWideRounded-TW-Bold.ttf nowar/big5-NowarCompactRounded-TW-Light.ttf nowar/big5-NowarCompactRounded-TW-Regular.ttf nowar/big5-NowarCompactRounded-TW-Medium.ttf nowar/big5-NowarCompactRounded-TW-Bold.ttf nowar/big5-NowarRounded-HK-Light.ttf nowar/big5-NowarRounded-HK-Regular.ttf nowar/big5-NowarRounded-HK-Medium.ttf nowar/big5-NowarRounded-HK-Bold.ttf nowar/big5-NowarWideRounded-HK-Light.ttf nowar/big5-NowarWideRounded-HK-Regular.ttf nowar/big5-NowarWideRounded-HK-Medium.ttf nowar/big5-NowarWideRounded-HK-Bold.ttf nowar/big5-NowarCompactRounded-HK-Light.ttf nowar/big5-NowarCompactRounded-HK-Regular.ttf nowar/big5-NowarCompactRounded-HK-Medium.ttf nowar/big5-NowarCompactRounded-HK-Bold.ttf nowar/korean-NowarRounded-CL-Light.ttf nowar/korean-NowarRounded-CL-Regular.ttf nowar/korean-NowarRounded-CL-Medium.ttf nowar/korean-NowarRounded-CL-Bold.ttf nowar/korean-NowarWideRounded-CL-Light.ttf nowar/korean-NowarWideRounded-CL-Regular.ttf nowar/korean-NowarWideRounded-CL-Medium.ttf nowar/korean-NowarWideRounded-CL-Bold.ttf nowar/korean-NowarCompactRounded-CL-Light.ttf nowar/korean-NowarCompactRounded-CL-Regular.ttf nowar/korean-NowarCompactRounded-CL-Medium.ttf nowar/korean-NowarCompactRounded-CL-Bold.ttf
+	cp -r libsm NowarRoundedTypeface
+	mkdir -p NowarRoundedTypeface/Fonts/
+	for file in $^; do cp $$file NowarRoundedTypeface/Fonts/$${file#nowar/*-}; done
+	7z a -t7z -m0=LZMA:d=512m:fb=273 -ms $@ NowarRoundedTypeface/ -x!NowarRoundedTypeface/Fonts/*.ttf
+	7z a -t7z -m0=LZMA:d=512m:fb=273 -ms $@ NowarRoundedTypeface/Fonts/*-Light.ttf
+	7z a -t7z -m0=LZMA:d=512m:fb=273 -ms $@ NowarRoundedTypeface/Fonts/*-Regular.ttf
+	7z a -t7z -m0=LZMA:d=512m:fb=273 -ms $@ NowarRoundedTypeface/Fonts/*-Medium.ttf
+	7z a -t7z -m0=LZMA:d=512m:fb=273 -ms $@ NowarRoundedTypeface/Fonts/*-Bold.ttf
 
 nowar/NowarCompactRounded-ExtraLight.ttf: nowar/NowarCompactRounded-ExtraLight.otd
 	otfccbuild -O3 $< -o $@
@@ -483,6 +494,153 @@ nowar/korean-NowarWarcraftRounded-HK-ExtraLight.ttf: nowar/korean-NowarWarcraftR
 nowar/korean-NowarWarcraftRounded-HK-ExtraLight.otd: noto/rounded/NotoRounded-SemiCondensedExtraLight.otd noto/rounded/NotoRounded-CondensedExtraLight.otd rhr/ResourceHanRoundedHK-ExtraLight.otd
 	mkdir -p nowar/
 	python merge-warcraft.py HK ExtraLight korean ${VERSION}
+
+rhr/ResourceHanRoundedJP-ExtraLight.otd: rhr/ResourceHanRoundedJ-ExtraLight.ttf
+	otfccdump --ignore-hints $< -o $@
+
+nowar/unspec-NowarCompactRoundedUI-JP-ExtraLight.ttf: nowar/unspec-NowarCompactRoundedUI-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarCompactRoundedUI-JP-ExtraLight.otd: noto/rounded/NotoRounded-CondensedExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP ExtraLight unspec ${VERSION}
+
+nowar/unspec-NowarWideRoundedUI-JP-ExtraLight.ttf: nowar/unspec-NowarWideRoundedUI-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarWideRoundedUI-JP-ExtraLight.otd: noto/rounded/NotoRounded-ExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP ExtraLight unspec ${VERSION}
+
+nowar/unspec-NowarCompactRounded-JP-ExtraLight.ttf: nowar/unspec-NowarCompactRounded-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarCompactRounded-JP-ExtraLight.otd: noto/rounded/NotoRounded-CondensedExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-compact.py JP ExtraLight unspec ${VERSION}
+
+nowar/unspec-NowarRounded-JP-ExtraLight.ttf: nowar/unspec-NowarRounded-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarRounded-JP-ExtraLight.otd: noto/rounded/NotoRounded-SemiCondensedExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP ExtraLight unspec ${VERSION}
+
+nowar/unspec-NowarWideRounded-JP-ExtraLight.ttf: nowar/unspec-NowarWideRounded-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarWideRounded-JP-ExtraLight.otd: noto/rounded/NotoRounded-ExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-wide.py JP ExtraLight unspec ${VERSION}
+
+nowar/unspec-NowarWarcraftRounded-JP-ExtraLight.ttf: nowar/unspec-NowarWarcraftRounded-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarWarcraftRounded-JP-ExtraLight.otd: noto/rounded/NotoRounded-SemiCondensedExtraLight.otd noto/rounded/NotoRounded-CondensedExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP ExtraLight unspec ${VERSION}
+
+nowar/gbk-NowarCompactRoundedUI-JP-ExtraLight.ttf: nowar/gbk-NowarCompactRoundedUI-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarCompactRoundedUI-JP-ExtraLight.otd: noto/rounded/NotoRounded-CondensedExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP ExtraLight gbk ${VERSION}
+
+nowar/gbk-NowarWideRoundedUI-JP-ExtraLight.ttf: nowar/gbk-NowarWideRoundedUI-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarWideRoundedUI-JP-ExtraLight.otd: noto/rounded/NotoRounded-ExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP ExtraLight gbk ${VERSION}
+
+nowar/gbk-NowarCompactRounded-JP-ExtraLight.ttf: nowar/gbk-NowarCompactRounded-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarCompactRounded-JP-ExtraLight.otd: noto/rounded/NotoRounded-CondensedExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-compact.py JP ExtraLight gbk ${VERSION}
+
+nowar/gbk-NowarRounded-JP-ExtraLight.ttf: nowar/gbk-NowarRounded-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarRounded-JP-ExtraLight.otd: noto/rounded/NotoRounded-SemiCondensedExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP ExtraLight gbk ${VERSION}
+
+nowar/gbk-NowarWideRounded-JP-ExtraLight.ttf: nowar/gbk-NowarWideRounded-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarWideRounded-JP-ExtraLight.otd: noto/rounded/NotoRounded-ExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-wide.py JP ExtraLight gbk ${VERSION}
+
+nowar/gbk-NowarWarcraftRounded-JP-ExtraLight.ttf: nowar/gbk-NowarWarcraftRounded-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarWarcraftRounded-JP-ExtraLight.otd: noto/rounded/NotoRounded-SemiCondensedExtraLight.otd noto/rounded/NotoRounded-CondensedExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP ExtraLight gbk ${VERSION}
+
+nowar/big5-NowarCompactRoundedUI-JP-ExtraLight.ttf: nowar/big5-NowarCompactRoundedUI-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarCompactRoundedUI-JP-ExtraLight.otd: noto/rounded/NotoRounded-CondensedExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP ExtraLight big5 ${VERSION}
+
+nowar/big5-NowarWideRoundedUI-JP-ExtraLight.ttf: nowar/big5-NowarWideRoundedUI-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarWideRoundedUI-JP-ExtraLight.otd: noto/rounded/NotoRounded-ExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP ExtraLight big5 ${VERSION}
+
+nowar/big5-NowarCompactRounded-JP-ExtraLight.ttf: nowar/big5-NowarCompactRounded-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarCompactRounded-JP-ExtraLight.otd: noto/rounded/NotoRounded-CondensedExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-compact.py JP ExtraLight big5 ${VERSION}
+
+nowar/big5-NowarRounded-JP-ExtraLight.ttf: nowar/big5-NowarRounded-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarRounded-JP-ExtraLight.otd: noto/rounded/NotoRounded-SemiCondensedExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP ExtraLight big5 ${VERSION}
+
+nowar/big5-NowarWideRounded-JP-ExtraLight.ttf: nowar/big5-NowarWideRounded-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarWideRounded-JP-ExtraLight.otd: noto/rounded/NotoRounded-ExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-wide.py JP ExtraLight big5 ${VERSION}
+
+nowar/big5-NowarWarcraftRounded-JP-ExtraLight.ttf: nowar/big5-NowarWarcraftRounded-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarWarcraftRounded-JP-ExtraLight.otd: noto/rounded/NotoRounded-SemiCondensedExtraLight.otd noto/rounded/NotoRounded-CondensedExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP ExtraLight big5 ${VERSION}
+
+nowar/korean-NowarCompactRoundedUI-JP-ExtraLight.ttf: nowar/korean-NowarCompactRoundedUI-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarCompactRoundedUI-JP-ExtraLight.otd: noto/rounded/NotoRounded-CondensedExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP ExtraLight korean ${VERSION}
+
+nowar/korean-NowarWideRoundedUI-JP-ExtraLight.ttf: nowar/korean-NowarWideRoundedUI-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarWideRoundedUI-JP-ExtraLight.otd: noto/rounded/NotoRounded-ExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP ExtraLight korean ${VERSION}
+
+nowar/korean-NowarCompactRounded-JP-ExtraLight.ttf: nowar/korean-NowarCompactRounded-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarCompactRounded-JP-ExtraLight.otd: noto/rounded/NotoRounded-CondensedExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-compact.py JP ExtraLight korean ${VERSION}
+
+nowar/korean-NowarRounded-JP-ExtraLight.ttf: nowar/korean-NowarRounded-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarRounded-JP-ExtraLight.otd: noto/rounded/NotoRounded-SemiCondensedExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP ExtraLight korean ${VERSION}
+
+nowar/korean-NowarWideRounded-JP-ExtraLight.ttf: nowar/korean-NowarWideRounded-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarWideRounded-JP-ExtraLight.otd: noto/rounded/NotoRounded-ExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-wide.py JP ExtraLight korean ${VERSION}
+
+nowar/korean-NowarWarcraftRounded-JP-ExtraLight.ttf: nowar/korean-NowarWarcraftRounded-JP-ExtraLight.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarWarcraftRounded-JP-ExtraLight.otd: noto/rounded/NotoRounded-SemiCondensedExtraLight.otd noto/rounded/NotoRounded-CondensedExtraLight.otd rhr/ResourceHanRoundedJP-ExtraLight.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP ExtraLight korean ${VERSION}
 
 rhr/ResourceHanRoundedCL-ExtraLight.otd: rhr/ResourceHanRoundedK-ExtraLight.ttf
 	otfccdump --ignore-hints $< -o $@
@@ -1255,6 +1413,153 @@ nowar/korean-NowarWarcraftRounded-HK-Light.otd: noto/rounded/NotoRounded-SemiCon
 	mkdir -p nowar/
 	python merge-warcraft.py HK Light korean ${VERSION}
 
+rhr/ResourceHanRoundedJP-Light.otd: rhr/ResourceHanRoundedJ-Light.ttf
+	otfccdump --ignore-hints $< -o $@
+
+nowar/unspec-NowarCompactRoundedUI-JP-Light.ttf: nowar/unspec-NowarCompactRoundedUI-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarCompactRoundedUI-JP-Light.otd: noto/rounded/NotoRounded-CondensedLight.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP Light unspec ${VERSION}
+
+nowar/unspec-NowarWideRoundedUI-JP-Light.ttf: nowar/unspec-NowarWideRoundedUI-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarWideRoundedUI-JP-Light.otd: noto/rounded/NotoRounded-Light.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP Light unspec ${VERSION}
+
+nowar/unspec-NowarCompactRounded-JP-Light.ttf: nowar/unspec-NowarCompactRounded-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarCompactRounded-JP-Light.otd: noto/rounded/NotoRounded-CondensedLight.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-compact.py JP Light unspec ${VERSION}
+
+nowar/unspec-NowarRounded-JP-Light.ttf: nowar/unspec-NowarRounded-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarRounded-JP-Light.otd: noto/rounded/NotoRounded-SemiCondensedLight.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP Light unspec ${VERSION}
+
+nowar/unspec-NowarWideRounded-JP-Light.ttf: nowar/unspec-NowarWideRounded-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarWideRounded-JP-Light.otd: noto/rounded/NotoRounded-Light.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-wide.py JP Light unspec ${VERSION}
+
+nowar/unspec-NowarWarcraftRounded-JP-Light.ttf: nowar/unspec-NowarWarcraftRounded-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarWarcraftRounded-JP-Light.otd: noto/rounded/NotoRounded-SemiCondensedLight.otd noto/rounded/NotoRounded-CondensedLight.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP Light unspec ${VERSION}
+
+nowar/gbk-NowarCompactRoundedUI-JP-Light.ttf: nowar/gbk-NowarCompactRoundedUI-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarCompactRoundedUI-JP-Light.otd: noto/rounded/NotoRounded-CondensedLight.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP Light gbk ${VERSION}
+
+nowar/gbk-NowarWideRoundedUI-JP-Light.ttf: nowar/gbk-NowarWideRoundedUI-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarWideRoundedUI-JP-Light.otd: noto/rounded/NotoRounded-Light.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP Light gbk ${VERSION}
+
+nowar/gbk-NowarCompactRounded-JP-Light.ttf: nowar/gbk-NowarCompactRounded-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarCompactRounded-JP-Light.otd: noto/rounded/NotoRounded-CondensedLight.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-compact.py JP Light gbk ${VERSION}
+
+nowar/gbk-NowarRounded-JP-Light.ttf: nowar/gbk-NowarRounded-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarRounded-JP-Light.otd: noto/rounded/NotoRounded-SemiCondensedLight.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP Light gbk ${VERSION}
+
+nowar/gbk-NowarWideRounded-JP-Light.ttf: nowar/gbk-NowarWideRounded-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarWideRounded-JP-Light.otd: noto/rounded/NotoRounded-Light.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-wide.py JP Light gbk ${VERSION}
+
+nowar/gbk-NowarWarcraftRounded-JP-Light.ttf: nowar/gbk-NowarWarcraftRounded-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarWarcraftRounded-JP-Light.otd: noto/rounded/NotoRounded-SemiCondensedLight.otd noto/rounded/NotoRounded-CondensedLight.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP Light gbk ${VERSION}
+
+nowar/big5-NowarCompactRoundedUI-JP-Light.ttf: nowar/big5-NowarCompactRoundedUI-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarCompactRoundedUI-JP-Light.otd: noto/rounded/NotoRounded-CondensedLight.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP Light big5 ${VERSION}
+
+nowar/big5-NowarWideRoundedUI-JP-Light.ttf: nowar/big5-NowarWideRoundedUI-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarWideRoundedUI-JP-Light.otd: noto/rounded/NotoRounded-Light.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP Light big5 ${VERSION}
+
+nowar/big5-NowarCompactRounded-JP-Light.ttf: nowar/big5-NowarCompactRounded-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarCompactRounded-JP-Light.otd: noto/rounded/NotoRounded-CondensedLight.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-compact.py JP Light big5 ${VERSION}
+
+nowar/big5-NowarRounded-JP-Light.ttf: nowar/big5-NowarRounded-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarRounded-JP-Light.otd: noto/rounded/NotoRounded-SemiCondensedLight.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP Light big5 ${VERSION}
+
+nowar/big5-NowarWideRounded-JP-Light.ttf: nowar/big5-NowarWideRounded-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarWideRounded-JP-Light.otd: noto/rounded/NotoRounded-Light.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-wide.py JP Light big5 ${VERSION}
+
+nowar/big5-NowarWarcraftRounded-JP-Light.ttf: nowar/big5-NowarWarcraftRounded-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarWarcraftRounded-JP-Light.otd: noto/rounded/NotoRounded-SemiCondensedLight.otd noto/rounded/NotoRounded-CondensedLight.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP Light big5 ${VERSION}
+
+nowar/korean-NowarCompactRoundedUI-JP-Light.ttf: nowar/korean-NowarCompactRoundedUI-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarCompactRoundedUI-JP-Light.otd: noto/rounded/NotoRounded-CondensedLight.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP Light korean ${VERSION}
+
+nowar/korean-NowarWideRoundedUI-JP-Light.ttf: nowar/korean-NowarWideRoundedUI-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarWideRoundedUI-JP-Light.otd: noto/rounded/NotoRounded-Light.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP Light korean ${VERSION}
+
+nowar/korean-NowarCompactRounded-JP-Light.ttf: nowar/korean-NowarCompactRounded-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarCompactRounded-JP-Light.otd: noto/rounded/NotoRounded-CondensedLight.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-compact.py JP Light korean ${VERSION}
+
+nowar/korean-NowarRounded-JP-Light.ttf: nowar/korean-NowarRounded-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarRounded-JP-Light.otd: noto/rounded/NotoRounded-SemiCondensedLight.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP Light korean ${VERSION}
+
+nowar/korean-NowarWideRounded-JP-Light.ttf: nowar/korean-NowarWideRounded-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarWideRounded-JP-Light.otd: noto/rounded/NotoRounded-Light.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-wide.py JP Light korean ${VERSION}
+
+nowar/korean-NowarWarcraftRounded-JP-Light.ttf: nowar/korean-NowarWarcraftRounded-JP-Light.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarWarcraftRounded-JP-Light.otd: noto/rounded/NotoRounded-SemiCondensedLight.otd noto/rounded/NotoRounded-CondensedLight.otd rhr/ResourceHanRoundedJP-Light.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP Light korean ${VERSION}
+
 rhr/ResourceHanRoundedCL-Light.otd: rhr/ResourceHanRoundedK-Light.ttf
 	otfccdump --ignore-hints $< -o $@
 
@@ -2025,6 +2330,153 @@ nowar/korean-NowarWarcraftRounded-HK-Regular.ttf: nowar/korean-NowarWarcraftRoun
 nowar/korean-NowarWarcraftRounded-HK-Regular.otd: noto/rounded/NotoRounded-SemiCondensedRegular.otd noto/rounded/NotoRounded-CondensedRegular.otd rhr/ResourceHanRoundedHK-Regular.otd
 	mkdir -p nowar/
 	python merge-warcraft.py HK Regular korean ${VERSION}
+
+rhr/ResourceHanRoundedJP-Regular.otd: rhr/ResourceHanRoundedJ-Regular.ttf
+	otfccdump --ignore-hints $< -o $@
+
+nowar/unspec-NowarCompactRoundedUI-JP-Regular.ttf: nowar/unspec-NowarCompactRoundedUI-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarCompactRoundedUI-JP-Regular.otd: noto/rounded/NotoRounded-CondensedRegular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP Regular unspec ${VERSION}
+
+nowar/unspec-NowarWideRoundedUI-JP-Regular.ttf: nowar/unspec-NowarWideRoundedUI-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarWideRoundedUI-JP-Regular.otd: noto/rounded/NotoRounded-Regular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP Regular unspec ${VERSION}
+
+nowar/unspec-NowarCompactRounded-JP-Regular.ttf: nowar/unspec-NowarCompactRounded-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarCompactRounded-JP-Regular.otd: noto/rounded/NotoRounded-CondensedRegular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-compact.py JP Regular unspec ${VERSION}
+
+nowar/unspec-NowarRounded-JP-Regular.ttf: nowar/unspec-NowarRounded-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarRounded-JP-Regular.otd: noto/rounded/NotoRounded-SemiCondensedRegular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP Regular unspec ${VERSION}
+
+nowar/unspec-NowarWideRounded-JP-Regular.ttf: nowar/unspec-NowarWideRounded-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarWideRounded-JP-Regular.otd: noto/rounded/NotoRounded-Regular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-wide.py JP Regular unspec ${VERSION}
+
+nowar/unspec-NowarWarcraftRounded-JP-Regular.ttf: nowar/unspec-NowarWarcraftRounded-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarWarcraftRounded-JP-Regular.otd: noto/rounded/NotoRounded-SemiCondensedRegular.otd noto/rounded/NotoRounded-CondensedRegular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP Regular unspec ${VERSION}
+
+nowar/gbk-NowarCompactRoundedUI-JP-Regular.ttf: nowar/gbk-NowarCompactRoundedUI-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarCompactRoundedUI-JP-Regular.otd: noto/rounded/NotoRounded-CondensedRegular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP Regular gbk ${VERSION}
+
+nowar/gbk-NowarWideRoundedUI-JP-Regular.ttf: nowar/gbk-NowarWideRoundedUI-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarWideRoundedUI-JP-Regular.otd: noto/rounded/NotoRounded-Regular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP Regular gbk ${VERSION}
+
+nowar/gbk-NowarCompactRounded-JP-Regular.ttf: nowar/gbk-NowarCompactRounded-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarCompactRounded-JP-Regular.otd: noto/rounded/NotoRounded-CondensedRegular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-compact.py JP Regular gbk ${VERSION}
+
+nowar/gbk-NowarRounded-JP-Regular.ttf: nowar/gbk-NowarRounded-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarRounded-JP-Regular.otd: noto/rounded/NotoRounded-SemiCondensedRegular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP Regular gbk ${VERSION}
+
+nowar/gbk-NowarWideRounded-JP-Regular.ttf: nowar/gbk-NowarWideRounded-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarWideRounded-JP-Regular.otd: noto/rounded/NotoRounded-Regular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-wide.py JP Regular gbk ${VERSION}
+
+nowar/gbk-NowarWarcraftRounded-JP-Regular.ttf: nowar/gbk-NowarWarcraftRounded-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarWarcraftRounded-JP-Regular.otd: noto/rounded/NotoRounded-SemiCondensedRegular.otd noto/rounded/NotoRounded-CondensedRegular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP Regular gbk ${VERSION}
+
+nowar/big5-NowarCompactRoundedUI-JP-Regular.ttf: nowar/big5-NowarCompactRoundedUI-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarCompactRoundedUI-JP-Regular.otd: noto/rounded/NotoRounded-CondensedRegular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP Regular big5 ${VERSION}
+
+nowar/big5-NowarWideRoundedUI-JP-Regular.ttf: nowar/big5-NowarWideRoundedUI-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarWideRoundedUI-JP-Regular.otd: noto/rounded/NotoRounded-Regular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP Regular big5 ${VERSION}
+
+nowar/big5-NowarCompactRounded-JP-Regular.ttf: nowar/big5-NowarCompactRounded-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarCompactRounded-JP-Regular.otd: noto/rounded/NotoRounded-CondensedRegular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-compact.py JP Regular big5 ${VERSION}
+
+nowar/big5-NowarRounded-JP-Regular.ttf: nowar/big5-NowarRounded-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarRounded-JP-Regular.otd: noto/rounded/NotoRounded-SemiCondensedRegular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP Regular big5 ${VERSION}
+
+nowar/big5-NowarWideRounded-JP-Regular.ttf: nowar/big5-NowarWideRounded-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarWideRounded-JP-Regular.otd: noto/rounded/NotoRounded-Regular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-wide.py JP Regular big5 ${VERSION}
+
+nowar/big5-NowarWarcraftRounded-JP-Regular.ttf: nowar/big5-NowarWarcraftRounded-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarWarcraftRounded-JP-Regular.otd: noto/rounded/NotoRounded-SemiCondensedRegular.otd noto/rounded/NotoRounded-CondensedRegular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP Regular big5 ${VERSION}
+
+nowar/korean-NowarCompactRoundedUI-JP-Regular.ttf: nowar/korean-NowarCompactRoundedUI-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarCompactRoundedUI-JP-Regular.otd: noto/rounded/NotoRounded-CondensedRegular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP Regular korean ${VERSION}
+
+nowar/korean-NowarWideRoundedUI-JP-Regular.ttf: nowar/korean-NowarWideRoundedUI-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarWideRoundedUI-JP-Regular.otd: noto/rounded/NotoRounded-Regular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP Regular korean ${VERSION}
+
+nowar/korean-NowarCompactRounded-JP-Regular.ttf: nowar/korean-NowarCompactRounded-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarCompactRounded-JP-Regular.otd: noto/rounded/NotoRounded-CondensedRegular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-compact.py JP Regular korean ${VERSION}
+
+nowar/korean-NowarRounded-JP-Regular.ttf: nowar/korean-NowarRounded-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarRounded-JP-Regular.otd: noto/rounded/NotoRounded-SemiCondensedRegular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP Regular korean ${VERSION}
+
+nowar/korean-NowarWideRounded-JP-Regular.ttf: nowar/korean-NowarWideRounded-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarWideRounded-JP-Regular.otd: noto/rounded/NotoRounded-Regular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-wide.py JP Regular korean ${VERSION}
+
+nowar/korean-NowarWarcraftRounded-JP-Regular.ttf: nowar/korean-NowarWarcraftRounded-JP-Regular.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarWarcraftRounded-JP-Regular.otd: noto/rounded/NotoRounded-SemiCondensedRegular.otd noto/rounded/NotoRounded-CondensedRegular.otd rhr/ResourceHanRoundedJP-Regular.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP Regular korean ${VERSION}
 
 rhr/ResourceHanRoundedCL-Regular.otd: rhr/ResourceHanRoundedK-Regular.ttf
 	otfccdump --ignore-hints $< -o $@
@@ -2797,6 +3249,153 @@ nowar/korean-NowarWarcraftRounded-HK-Medium.otd: noto/rounded/NotoRounded-SemiCo
 	mkdir -p nowar/
 	python merge-warcraft.py HK Medium korean ${VERSION}
 
+rhr/ResourceHanRoundedJP-Medium.otd: rhr/ResourceHanRoundedJ-Medium.ttf
+	otfccdump --ignore-hints $< -o $@
+
+nowar/unspec-NowarCompactRoundedUI-JP-Medium.ttf: nowar/unspec-NowarCompactRoundedUI-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarCompactRoundedUI-JP-Medium.otd: noto/rounded/NotoRounded-CondensedMedium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP Medium unspec ${VERSION}
+
+nowar/unspec-NowarWideRoundedUI-JP-Medium.ttf: nowar/unspec-NowarWideRoundedUI-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarWideRoundedUI-JP-Medium.otd: noto/rounded/NotoRounded-Medium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP Medium unspec ${VERSION}
+
+nowar/unspec-NowarCompactRounded-JP-Medium.ttf: nowar/unspec-NowarCompactRounded-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarCompactRounded-JP-Medium.otd: noto/rounded/NotoRounded-CondensedMedium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-compact.py JP Medium unspec ${VERSION}
+
+nowar/unspec-NowarRounded-JP-Medium.ttf: nowar/unspec-NowarRounded-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarRounded-JP-Medium.otd: noto/rounded/NotoRounded-SemiCondensedMedium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP Medium unspec ${VERSION}
+
+nowar/unspec-NowarWideRounded-JP-Medium.ttf: nowar/unspec-NowarWideRounded-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarWideRounded-JP-Medium.otd: noto/rounded/NotoRounded-Medium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-wide.py JP Medium unspec ${VERSION}
+
+nowar/unspec-NowarWarcraftRounded-JP-Medium.ttf: nowar/unspec-NowarWarcraftRounded-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarWarcraftRounded-JP-Medium.otd: noto/rounded/NotoRounded-SemiCondensedMedium.otd noto/rounded/NotoRounded-CondensedMedium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP Medium unspec ${VERSION}
+
+nowar/gbk-NowarCompactRoundedUI-JP-Medium.ttf: nowar/gbk-NowarCompactRoundedUI-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarCompactRoundedUI-JP-Medium.otd: noto/rounded/NotoRounded-CondensedMedium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP Medium gbk ${VERSION}
+
+nowar/gbk-NowarWideRoundedUI-JP-Medium.ttf: nowar/gbk-NowarWideRoundedUI-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarWideRoundedUI-JP-Medium.otd: noto/rounded/NotoRounded-Medium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP Medium gbk ${VERSION}
+
+nowar/gbk-NowarCompactRounded-JP-Medium.ttf: nowar/gbk-NowarCompactRounded-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarCompactRounded-JP-Medium.otd: noto/rounded/NotoRounded-CondensedMedium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-compact.py JP Medium gbk ${VERSION}
+
+nowar/gbk-NowarRounded-JP-Medium.ttf: nowar/gbk-NowarRounded-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarRounded-JP-Medium.otd: noto/rounded/NotoRounded-SemiCondensedMedium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP Medium gbk ${VERSION}
+
+nowar/gbk-NowarWideRounded-JP-Medium.ttf: nowar/gbk-NowarWideRounded-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarWideRounded-JP-Medium.otd: noto/rounded/NotoRounded-Medium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-wide.py JP Medium gbk ${VERSION}
+
+nowar/gbk-NowarWarcraftRounded-JP-Medium.ttf: nowar/gbk-NowarWarcraftRounded-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarWarcraftRounded-JP-Medium.otd: noto/rounded/NotoRounded-SemiCondensedMedium.otd noto/rounded/NotoRounded-CondensedMedium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP Medium gbk ${VERSION}
+
+nowar/big5-NowarCompactRoundedUI-JP-Medium.ttf: nowar/big5-NowarCompactRoundedUI-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarCompactRoundedUI-JP-Medium.otd: noto/rounded/NotoRounded-CondensedMedium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP Medium big5 ${VERSION}
+
+nowar/big5-NowarWideRoundedUI-JP-Medium.ttf: nowar/big5-NowarWideRoundedUI-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarWideRoundedUI-JP-Medium.otd: noto/rounded/NotoRounded-Medium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP Medium big5 ${VERSION}
+
+nowar/big5-NowarCompactRounded-JP-Medium.ttf: nowar/big5-NowarCompactRounded-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarCompactRounded-JP-Medium.otd: noto/rounded/NotoRounded-CondensedMedium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-compact.py JP Medium big5 ${VERSION}
+
+nowar/big5-NowarRounded-JP-Medium.ttf: nowar/big5-NowarRounded-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarRounded-JP-Medium.otd: noto/rounded/NotoRounded-SemiCondensedMedium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP Medium big5 ${VERSION}
+
+nowar/big5-NowarWideRounded-JP-Medium.ttf: nowar/big5-NowarWideRounded-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarWideRounded-JP-Medium.otd: noto/rounded/NotoRounded-Medium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-wide.py JP Medium big5 ${VERSION}
+
+nowar/big5-NowarWarcraftRounded-JP-Medium.ttf: nowar/big5-NowarWarcraftRounded-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarWarcraftRounded-JP-Medium.otd: noto/rounded/NotoRounded-SemiCondensedMedium.otd noto/rounded/NotoRounded-CondensedMedium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP Medium big5 ${VERSION}
+
+nowar/korean-NowarCompactRoundedUI-JP-Medium.ttf: nowar/korean-NowarCompactRoundedUI-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarCompactRoundedUI-JP-Medium.otd: noto/rounded/NotoRounded-CondensedMedium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP Medium korean ${VERSION}
+
+nowar/korean-NowarWideRoundedUI-JP-Medium.ttf: nowar/korean-NowarWideRoundedUI-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarWideRoundedUI-JP-Medium.otd: noto/rounded/NotoRounded-Medium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP Medium korean ${VERSION}
+
+nowar/korean-NowarCompactRounded-JP-Medium.ttf: nowar/korean-NowarCompactRounded-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarCompactRounded-JP-Medium.otd: noto/rounded/NotoRounded-CondensedMedium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-compact.py JP Medium korean ${VERSION}
+
+nowar/korean-NowarRounded-JP-Medium.ttf: nowar/korean-NowarRounded-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarRounded-JP-Medium.otd: noto/rounded/NotoRounded-SemiCondensedMedium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP Medium korean ${VERSION}
+
+nowar/korean-NowarWideRounded-JP-Medium.ttf: nowar/korean-NowarWideRounded-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarWideRounded-JP-Medium.otd: noto/rounded/NotoRounded-Medium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-wide.py JP Medium korean ${VERSION}
+
+nowar/korean-NowarWarcraftRounded-JP-Medium.ttf: nowar/korean-NowarWarcraftRounded-JP-Medium.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarWarcraftRounded-JP-Medium.otd: noto/rounded/NotoRounded-SemiCondensedMedium.otd noto/rounded/NotoRounded-CondensedMedium.otd rhr/ResourceHanRoundedJP-Medium.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP Medium korean ${VERSION}
+
 rhr/ResourceHanRoundedCL-Medium.otd: rhr/ResourceHanRoundedK-Medium.ttf
 	otfccdump --ignore-hints $< -o $@
 
@@ -3567,6 +4166,153 @@ nowar/korean-NowarWarcraftRounded-HK-Bold.ttf: nowar/korean-NowarWarcraftRounded
 nowar/korean-NowarWarcraftRounded-HK-Bold.otd: noto/rounded/NotoRounded-SemiCondensedBold.otd noto/rounded/NotoRounded-CondensedBold.otd rhr/ResourceHanRoundedHK-Bold.otd
 	mkdir -p nowar/
 	python merge-warcraft.py HK Bold korean ${VERSION}
+
+rhr/ResourceHanRoundedJP-Bold.otd: rhr/ResourceHanRoundedJ-Bold.ttf
+	otfccdump --ignore-hints $< -o $@
+
+nowar/unspec-NowarCompactRoundedUI-JP-Bold.ttf: nowar/unspec-NowarCompactRoundedUI-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarCompactRoundedUI-JP-Bold.otd: noto/rounded/NotoRounded-CondensedBold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP Bold unspec ${VERSION}
+
+nowar/unspec-NowarWideRoundedUI-JP-Bold.ttf: nowar/unspec-NowarWideRoundedUI-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarWideRoundedUI-JP-Bold.otd: noto/rounded/NotoRounded-Bold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP Bold unspec ${VERSION}
+
+nowar/unspec-NowarCompactRounded-JP-Bold.ttf: nowar/unspec-NowarCompactRounded-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarCompactRounded-JP-Bold.otd: noto/rounded/NotoRounded-CondensedBold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-compact.py JP Bold unspec ${VERSION}
+
+nowar/unspec-NowarRounded-JP-Bold.ttf: nowar/unspec-NowarRounded-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarRounded-JP-Bold.otd: noto/rounded/NotoRounded-SemiCondensedBold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP Bold unspec ${VERSION}
+
+nowar/unspec-NowarWideRounded-JP-Bold.ttf: nowar/unspec-NowarWideRounded-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarWideRounded-JP-Bold.otd: noto/rounded/NotoRounded-Bold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-wide.py JP Bold unspec ${VERSION}
+
+nowar/unspec-NowarWarcraftRounded-JP-Bold.ttf: nowar/unspec-NowarWarcraftRounded-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarWarcraftRounded-JP-Bold.otd: noto/rounded/NotoRounded-SemiCondensedBold.otd noto/rounded/NotoRounded-CondensedBold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP Bold unspec ${VERSION}
+
+nowar/gbk-NowarCompactRoundedUI-JP-Bold.ttf: nowar/gbk-NowarCompactRoundedUI-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarCompactRoundedUI-JP-Bold.otd: noto/rounded/NotoRounded-CondensedBold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP Bold gbk ${VERSION}
+
+nowar/gbk-NowarWideRoundedUI-JP-Bold.ttf: nowar/gbk-NowarWideRoundedUI-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarWideRoundedUI-JP-Bold.otd: noto/rounded/NotoRounded-Bold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP Bold gbk ${VERSION}
+
+nowar/gbk-NowarCompactRounded-JP-Bold.ttf: nowar/gbk-NowarCompactRounded-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarCompactRounded-JP-Bold.otd: noto/rounded/NotoRounded-CondensedBold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-compact.py JP Bold gbk ${VERSION}
+
+nowar/gbk-NowarRounded-JP-Bold.ttf: nowar/gbk-NowarRounded-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarRounded-JP-Bold.otd: noto/rounded/NotoRounded-SemiCondensedBold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP Bold gbk ${VERSION}
+
+nowar/gbk-NowarWideRounded-JP-Bold.ttf: nowar/gbk-NowarWideRounded-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarWideRounded-JP-Bold.otd: noto/rounded/NotoRounded-Bold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-wide.py JP Bold gbk ${VERSION}
+
+nowar/gbk-NowarWarcraftRounded-JP-Bold.ttf: nowar/gbk-NowarWarcraftRounded-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarWarcraftRounded-JP-Bold.otd: noto/rounded/NotoRounded-SemiCondensedBold.otd noto/rounded/NotoRounded-CondensedBold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP Bold gbk ${VERSION}
+
+nowar/big5-NowarCompactRoundedUI-JP-Bold.ttf: nowar/big5-NowarCompactRoundedUI-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarCompactRoundedUI-JP-Bold.otd: noto/rounded/NotoRounded-CondensedBold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP Bold big5 ${VERSION}
+
+nowar/big5-NowarWideRoundedUI-JP-Bold.ttf: nowar/big5-NowarWideRoundedUI-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarWideRoundedUI-JP-Bold.otd: noto/rounded/NotoRounded-Bold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP Bold big5 ${VERSION}
+
+nowar/big5-NowarCompactRounded-JP-Bold.ttf: nowar/big5-NowarCompactRounded-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarCompactRounded-JP-Bold.otd: noto/rounded/NotoRounded-CondensedBold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-compact.py JP Bold big5 ${VERSION}
+
+nowar/big5-NowarRounded-JP-Bold.ttf: nowar/big5-NowarRounded-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarRounded-JP-Bold.otd: noto/rounded/NotoRounded-SemiCondensedBold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP Bold big5 ${VERSION}
+
+nowar/big5-NowarWideRounded-JP-Bold.ttf: nowar/big5-NowarWideRounded-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarWideRounded-JP-Bold.otd: noto/rounded/NotoRounded-Bold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-wide.py JP Bold big5 ${VERSION}
+
+nowar/big5-NowarWarcraftRounded-JP-Bold.ttf: nowar/big5-NowarWarcraftRounded-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarWarcraftRounded-JP-Bold.otd: noto/rounded/NotoRounded-SemiCondensedBold.otd noto/rounded/NotoRounded-CondensedBold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP Bold big5 ${VERSION}
+
+nowar/korean-NowarCompactRoundedUI-JP-Bold.ttf: nowar/korean-NowarCompactRoundedUI-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarCompactRoundedUI-JP-Bold.otd: noto/rounded/NotoRounded-CondensedBold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP Bold korean ${VERSION}
+
+nowar/korean-NowarWideRoundedUI-JP-Bold.ttf: nowar/korean-NowarWideRoundedUI-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarWideRoundedUI-JP-Bold.otd: noto/rounded/NotoRounded-Bold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP Bold korean ${VERSION}
+
+nowar/korean-NowarCompactRounded-JP-Bold.ttf: nowar/korean-NowarCompactRounded-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarCompactRounded-JP-Bold.otd: noto/rounded/NotoRounded-CondensedBold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-compact.py JP Bold korean ${VERSION}
+
+nowar/korean-NowarRounded-JP-Bold.ttf: nowar/korean-NowarRounded-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarRounded-JP-Bold.otd: noto/rounded/NotoRounded-SemiCondensedBold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP Bold korean ${VERSION}
+
+nowar/korean-NowarWideRounded-JP-Bold.ttf: nowar/korean-NowarWideRounded-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarWideRounded-JP-Bold.otd: noto/rounded/NotoRounded-Bold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-wide.py JP Bold korean ${VERSION}
+
+nowar/korean-NowarWarcraftRounded-JP-Bold.ttf: nowar/korean-NowarWarcraftRounded-JP-Bold.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarWarcraftRounded-JP-Bold.otd: noto/rounded/NotoRounded-SemiCondensedBold.otd noto/rounded/NotoRounded-CondensedBold.otd rhr/ResourceHanRoundedJP-Bold.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP Bold korean ${VERSION}
 
 rhr/ResourceHanRoundedCL-Bold.otd: rhr/ResourceHanRoundedK-Bold.ttf
 	otfccdump --ignore-hints $< -o $@
@@ -4339,6 +5085,153 @@ nowar/korean-NowarWarcraftRounded-HK-ExtraBold.otd: noto/rounded/NotoRounded-Sem
 	mkdir -p nowar/
 	python merge-warcraft.py HK ExtraBold korean ${VERSION}
 
+rhr/ResourceHanRoundedJP-ExtraBold.otd: rhr/ResourceHanRoundedJ-ExtraBold.ttf
+	otfccdump --ignore-hints $< -o $@
+
+nowar/unspec-NowarCompactRoundedUI-JP-ExtraBold.ttf: nowar/unspec-NowarCompactRoundedUI-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarCompactRoundedUI-JP-ExtraBold.otd: noto/rounded/NotoRounded-CondensedExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP ExtraBold unspec ${VERSION}
+
+nowar/unspec-NowarWideRoundedUI-JP-ExtraBold.ttf: nowar/unspec-NowarWideRoundedUI-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarWideRoundedUI-JP-ExtraBold.otd: noto/rounded/NotoRounded-ExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP ExtraBold unspec ${VERSION}
+
+nowar/unspec-NowarCompactRounded-JP-ExtraBold.ttf: nowar/unspec-NowarCompactRounded-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarCompactRounded-JP-ExtraBold.otd: noto/rounded/NotoRounded-CondensedExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-compact.py JP ExtraBold unspec ${VERSION}
+
+nowar/unspec-NowarRounded-JP-ExtraBold.ttf: nowar/unspec-NowarRounded-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarRounded-JP-ExtraBold.otd: noto/rounded/NotoRounded-SemiCondensedExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP ExtraBold unspec ${VERSION}
+
+nowar/unspec-NowarWideRounded-JP-ExtraBold.ttf: nowar/unspec-NowarWideRounded-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarWideRounded-JP-ExtraBold.otd: noto/rounded/NotoRounded-ExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-wide.py JP ExtraBold unspec ${VERSION}
+
+nowar/unspec-NowarWarcraftRounded-JP-ExtraBold.ttf: nowar/unspec-NowarWarcraftRounded-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/unspec-NowarWarcraftRounded-JP-ExtraBold.otd: noto/rounded/NotoRounded-SemiCondensedExtraBold.otd noto/rounded/NotoRounded-CondensedExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP ExtraBold unspec ${VERSION}
+
+nowar/gbk-NowarCompactRoundedUI-JP-ExtraBold.ttf: nowar/gbk-NowarCompactRoundedUI-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarCompactRoundedUI-JP-ExtraBold.otd: noto/rounded/NotoRounded-CondensedExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP ExtraBold gbk ${VERSION}
+
+nowar/gbk-NowarWideRoundedUI-JP-ExtraBold.ttf: nowar/gbk-NowarWideRoundedUI-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarWideRoundedUI-JP-ExtraBold.otd: noto/rounded/NotoRounded-ExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP ExtraBold gbk ${VERSION}
+
+nowar/gbk-NowarCompactRounded-JP-ExtraBold.ttf: nowar/gbk-NowarCompactRounded-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarCompactRounded-JP-ExtraBold.otd: noto/rounded/NotoRounded-CondensedExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-compact.py JP ExtraBold gbk ${VERSION}
+
+nowar/gbk-NowarRounded-JP-ExtraBold.ttf: nowar/gbk-NowarRounded-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarRounded-JP-ExtraBold.otd: noto/rounded/NotoRounded-SemiCondensedExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP ExtraBold gbk ${VERSION}
+
+nowar/gbk-NowarWideRounded-JP-ExtraBold.ttf: nowar/gbk-NowarWideRounded-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarWideRounded-JP-ExtraBold.otd: noto/rounded/NotoRounded-ExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-wide.py JP ExtraBold gbk ${VERSION}
+
+nowar/gbk-NowarWarcraftRounded-JP-ExtraBold.ttf: nowar/gbk-NowarWarcraftRounded-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/gbk-NowarWarcraftRounded-JP-ExtraBold.otd: noto/rounded/NotoRounded-SemiCondensedExtraBold.otd noto/rounded/NotoRounded-CondensedExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP ExtraBold gbk ${VERSION}
+
+nowar/big5-NowarCompactRoundedUI-JP-ExtraBold.ttf: nowar/big5-NowarCompactRoundedUI-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarCompactRoundedUI-JP-ExtraBold.otd: noto/rounded/NotoRounded-CondensedExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP ExtraBold big5 ${VERSION}
+
+nowar/big5-NowarWideRoundedUI-JP-ExtraBold.ttf: nowar/big5-NowarWideRoundedUI-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarWideRoundedUI-JP-ExtraBold.otd: noto/rounded/NotoRounded-ExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP ExtraBold big5 ${VERSION}
+
+nowar/big5-NowarCompactRounded-JP-ExtraBold.ttf: nowar/big5-NowarCompactRounded-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarCompactRounded-JP-ExtraBold.otd: noto/rounded/NotoRounded-CondensedExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-compact.py JP ExtraBold big5 ${VERSION}
+
+nowar/big5-NowarRounded-JP-ExtraBold.ttf: nowar/big5-NowarRounded-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarRounded-JP-ExtraBold.otd: noto/rounded/NotoRounded-SemiCondensedExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP ExtraBold big5 ${VERSION}
+
+nowar/big5-NowarWideRounded-JP-ExtraBold.ttf: nowar/big5-NowarWideRounded-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarWideRounded-JP-ExtraBold.otd: noto/rounded/NotoRounded-ExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-wide.py JP ExtraBold big5 ${VERSION}
+
+nowar/big5-NowarWarcraftRounded-JP-ExtraBold.ttf: nowar/big5-NowarWarcraftRounded-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/big5-NowarWarcraftRounded-JP-ExtraBold.otd: noto/rounded/NotoRounded-SemiCondensedExtraBold.otd noto/rounded/NotoRounded-CondensedExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP ExtraBold big5 ${VERSION}
+
+nowar/korean-NowarCompactRoundedUI-JP-ExtraBold.ttf: nowar/korean-NowarCompactRoundedUI-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarCompactRoundedUI-JP-ExtraBold.otd: noto/rounded/NotoRounded-CondensedExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-compactui.py JP ExtraBold korean ${VERSION}
+
+nowar/korean-NowarWideRoundedUI-JP-ExtraBold.ttf: nowar/korean-NowarWideRoundedUI-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarWideRoundedUI-JP-ExtraBold.otd: noto/rounded/NotoRounded-ExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-wideui.py JP ExtraBold korean ${VERSION}
+
+nowar/korean-NowarCompactRounded-JP-ExtraBold.ttf: nowar/korean-NowarCompactRounded-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarCompactRounded-JP-ExtraBold.otd: noto/rounded/NotoRounded-CondensedExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-compact.py JP ExtraBold korean ${VERSION}
+
+nowar/korean-NowarRounded-JP-ExtraBold.ttf: nowar/korean-NowarRounded-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarRounded-JP-ExtraBold.otd: noto/rounded/NotoRounded-SemiCondensedExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-rounded.py JP ExtraBold korean ${VERSION}
+
+nowar/korean-NowarWideRounded-JP-ExtraBold.ttf: nowar/korean-NowarWideRounded-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarWideRounded-JP-ExtraBold.otd: noto/rounded/NotoRounded-ExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-wide.py JP ExtraBold korean ${VERSION}
+
+nowar/korean-NowarWarcraftRounded-JP-ExtraBold.ttf: nowar/korean-NowarWarcraftRounded-JP-ExtraBold.otd
+	otfccbuild -O3 $< -o $@
+nowar/korean-NowarWarcraftRounded-JP-ExtraBold.otd: noto/rounded/NotoRounded-SemiCondensedExtraBold.otd noto/rounded/NotoRounded-CondensedExtraBold.otd rhr/ResourceHanRoundedJP-ExtraBold.otd
+	mkdir -p nowar/
+	python merge-warcraft.py JP ExtraBold korean ${VERSION}
+
 rhr/ResourceHanRoundedCL-ExtraBold.otd: rhr/ResourceHanRoundedK-ExtraBold.ttf
 	otfccdump --ignore-hints $< -o $@
 
@@ -4834,6 +5727,73 @@ HK-L/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Light.ttf
 	mkdir -p HK-L/Fonts
 	cp $^ $@
 
+JP-L-${VERSION}.7z: JP-L/Fonts/MORPHEUS.ttf JP-L/Fonts/FRIZQT__.ttf JP-L/Fonts/ARIALN.ttf JP-L/Fonts/skurri.ttf \
+                 JP-L/Fonts/MORPHEUS_CYR.ttf JP-L/Fonts/FRIZQT___CYR.ttf JP-L/Fonts/SKURRI_CYR.ttf \
+                 JP-L/Fonts/ARKai_C.ttf JP-L/Fonts/ARKai_T.ttf JP-L/Fonts/ARHei.ttf \
+                 JP-L/Fonts/bKAI00M.ttf JP-L/Fonts/bHEI00M.ttf JP-L/Fonts/bHEI01B.ttf JP-L/Fonts/blei00d.ttf \
+                 JP-L/Fonts/2002.ttf JP-L/Fonts/2002B.ttf JP-L/Fonts/K_Damage.ttf JP-L/Fonts/K_Pagetext.ttf
+	cd JP-L ; \
+	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
+	7z a -t7z -m0=LZMA:d=512m:fb=273 -ms ../$@ Fonts/
+
+JP-L/Fonts/MORPHEUS.ttf: nowar/NowarCompactRounded-ExtraLight.ttf
+	mkdir -p JP-L/Fonts
+	cp $^ $@
+JP-L/Fonts/MORPHEUS_CYR.ttf: nowar/NowarCompactRounded-ExtraLight.ttf
+	mkdir -p JP-L/Fonts
+	cp $^ $@
+JP-L/Fonts/FRIZQT__.ttf: nowar/unspec-NowarWideRoundedUI-JP-Light.ttf
+	mkdir -p JP-L/Fonts
+	cp $^ $@
+JP-L/Fonts/FRIZQT___CYR.ttf: nowar/unspec-NowarWideRoundedUI-JP-Light.ttf
+	mkdir -p JP-L/Fonts
+	cp $^ $@
+JP-L/Fonts/ARIALN.ttf: nowar/unspec-NowarCompactRoundedUI-JP-Light.ttf
+	mkdir -p JP-L/Fonts
+	cp $^ $@
+JP-L/Fonts/skurri.ttf: nowar/NowarWideRounded-Light.ttf
+	mkdir -p JP-L/Fonts
+	cp $^ $@
+JP-L/Fonts/SKURRI_CYR.ttf: nowar/NowarWideRounded-Light.ttf
+	mkdir -p JP-L/Fonts
+	cp $^ $@
+
+JP-L/Fonts/ARKai_C.ttf: nowar/gbk-NowarWideRounded-CN-Light.ttf
+	mkdir -p JP-L/Fonts
+	cp $^ $@
+JP-L/Fonts/ARKai_T.ttf: nowar/gbk-NowarWarcraftRounded-CN-Light.ttf
+	mkdir -p JP-L/Fonts
+	cp $^ $@
+JP-L/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CN-Light.ttf
+	mkdir -p JP-L/Fonts
+	cp $^ $@
+
+JP-L/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-TW-Light.ttf
+	mkdir -p JP-L/Fonts
+	cp $^ $@
+JP-L/Fonts/bHEI00M.ttf: nowar/big5-NowarRounded-TW-Light.ttf
+	mkdir -p JP-L/Fonts
+	cp $^ $@
+JP-L/Fonts/bHEI01B.ttf: nowar/big5-NowarCompactRounded-TW-Light.ttf
+	mkdir -p JP-L/Fonts
+	cp $^ $@
+JP-L/Fonts/blei00d.ttf: nowar/big5-NowarWarcraftRounded-TW-Light.ttf
+	mkdir -p JP-L/Fonts
+	cp $^ $@
+
+JP-L/Fonts/2002.ttf: nowar/korean-NowarWarcraftRounded-CL-Light.ttf
+	mkdir -p JP-L/Fonts
+	cp $^ $@
+JP-L/Fonts/2002B.ttf: nowar/korean-NowarWideRounded-CL-Light.ttf
+	mkdir -p JP-L/Fonts
+	cp $^ $@
+JP-L/Fonts/K_Damage.ttf: nowar/korean-NowarWideRounded-CL-Light.ttf
+	mkdir -p JP-L/Fonts
+	cp $^ $@
+JP-L/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Light.ttf
+	mkdir -p JP-L/Fonts
+	cp $^ $@
+
 CL-L-${VERSION}.7z: CL-L/Fonts/MORPHEUS.ttf CL-L/Fonts/FRIZQT__.ttf CL-L/Fonts/ARIALN.ttf CL-L/Fonts/skurri.ttf \
                  CL-L/Fonts/MORPHEUS_CYR.ttf CL-L/Fonts/FRIZQT___CYR.ttf CL-L/Fonts/SKURRI_CYR.ttf \
                  CL-L/Fonts/ARKai_C.ttf CL-L/Fonts/ARKai_T.ttf CL-L/Fonts/ARHei.ttf \
@@ -5167,6 +6127,73 @@ HK-R/Fonts/K_Damage.ttf: nowar/korean-NowarWideRounded-CL-Regular.ttf
 	cp $^ $@
 HK-R/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Regular.ttf
 	mkdir -p HK-R/Fonts
+	cp $^ $@
+
+JP-R-${VERSION}.7z: JP-R/Fonts/MORPHEUS.ttf JP-R/Fonts/FRIZQT__.ttf JP-R/Fonts/ARIALN.ttf JP-R/Fonts/skurri.ttf \
+                 JP-R/Fonts/MORPHEUS_CYR.ttf JP-R/Fonts/FRIZQT___CYR.ttf JP-R/Fonts/SKURRI_CYR.ttf \
+                 JP-R/Fonts/ARKai_C.ttf JP-R/Fonts/ARKai_T.ttf JP-R/Fonts/ARHei.ttf \
+                 JP-R/Fonts/bKAI00M.ttf JP-R/Fonts/bHEI00M.ttf JP-R/Fonts/bHEI01B.ttf JP-R/Fonts/blei00d.ttf \
+                 JP-R/Fonts/2002.ttf JP-R/Fonts/2002B.ttf JP-R/Fonts/K_Damage.ttf JP-R/Fonts/K_Pagetext.ttf
+	cd JP-R ; \
+	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
+	7z a -t7z -m0=LZMA:d=512m:fb=273 -ms ../$@ Fonts/
+
+JP-R/Fonts/MORPHEUS.ttf: nowar/NowarCompactRounded-Medium.ttf
+	mkdir -p JP-R/Fonts
+	cp $^ $@
+JP-R/Fonts/MORPHEUS_CYR.ttf: nowar/NowarCompactRounded-Medium.ttf
+	mkdir -p JP-R/Fonts
+	cp $^ $@
+JP-R/Fonts/FRIZQT__.ttf: nowar/unspec-NowarWideRoundedUI-JP-Regular.ttf
+	mkdir -p JP-R/Fonts
+	cp $^ $@
+JP-R/Fonts/FRIZQT___CYR.ttf: nowar/unspec-NowarWideRoundedUI-JP-Regular.ttf
+	mkdir -p JP-R/Fonts
+	cp $^ $@
+JP-R/Fonts/ARIALN.ttf: nowar/unspec-NowarCompactRoundedUI-JP-Regular.ttf
+	mkdir -p JP-R/Fonts
+	cp $^ $@
+JP-R/Fonts/skurri.ttf: nowar/NowarWideRounded-Regular.ttf
+	mkdir -p JP-R/Fonts
+	cp $^ $@
+JP-R/Fonts/SKURRI_CYR.ttf: nowar/NowarWideRounded-Regular.ttf
+	mkdir -p JP-R/Fonts
+	cp $^ $@
+
+JP-R/Fonts/ARKai_C.ttf: nowar/gbk-NowarWideRounded-CN-Regular.ttf
+	mkdir -p JP-R/Fonts
+	cp $^ $@
+JP-R/Fonts/ARKai_T.ttf: nowar/gbk-NowarWarcraftRounded-CN-Regular.ttf
+	mkdir -p JP-R/Fonts
+	cp $^ $@
+JP-R/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CN-Regular.ttf
+	mkdir -p JP-R/Fonts
+	cp $^ $@
+
+JP-R/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-TW-Regular.ttf
+	mkdir -p JP-R/Fonts
+	cp $^ $@
+JP-R/Fonts/bHEI00M.ttf: nowar/big5-NowarRounded-TW-Regular.ttf
+	mkdir -p JP-R/Fonts
+	cp $^ $@
+JP-R/Fonts/bHEI01B.ttf: nowar/big5-NowarCompactRounded-TW-Regular.ttf
+	mkdir -p JP-R/Fonts
+	cp $^ $@
+JP-R/Fonts/blei00d.ttf: nowar/big5-NowarWarcraftRounded-TW-Regular.ttf
+	mkdir -p JP-R/Fonts
+	cp $^ $@
+
+JP-R/Fonts/2002.ttf: nowar/korean-NowarWarcraftRounded-CL-Regular.ttf
+	mkdir -p JP-R/Fonts
+	cp $^ $@
+JP-R/Fonts/2002B.ttf: nowar/korean-NowarWideRounded-CL-Regular.ttf
+	mkdir -p JP-R/Fonts
+	cp $^ $@
+JP-R/Fonts/K_Damage.ttf: nowar/korean-NowarWideRounded-CL-Regular.ttf
+	mkdir -p JP-R/Fonts
+	cp $^ $@
+JP-R/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Regular.ttf
+	mkdir -p JP-R/Fonts
 	cp $^ $@
 
 CL-R-${VERSION}.7z: CL-R/Fonts/MORPHEUS.ttf CL-R/Fonts/FRIZQT__.ttf CL-R/Fonts/ARIALN.ttf CL-R/Fonts/skurri.ttf \
@@ -5504,6 +6531,73 @@ HK-M/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Medium.ttf
 	mkdir -p HK-M/Fonts
 	cp $^ $@
 
+JP-M-${VERSION}.7z: JP-M/Fonts/MORPHEUS.ttf JP-M/Fonts/FRIZQT__.ttf JP-M/Fonts/ARIALN.ttf JP-M/Fonts/skurri.ttf \
+                 JP-M/Fonts/MORPHEUS_CYR.ttf JP-M/Fonts/FRIZQT___CYR.ttf JP-M/Fonts/SKURRI_CYR.ttf \
+                 JP-M/Fonts/ARKai_C.ttf JP-M/Fonts/ARKai_T.ttf JP-M/Fonts/ARHei.ttf \
+                 JP-M/Fonts/bKAI00M.ttf JP-M/Fonts/bHEI00M.ttf JP-M/Fonts/bHEI01B.ttf JP-M/Fonts/blei00d.ttf \
+                 JP-M/Fonts/2002.ttf JP-M/Fonts/2002B.ttf JP-M/Fonts/K_Damage.ttf JP-M/Fonts/K_Pagetext.ttf
+	cd JP-M ; \
+	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
+	7z a -t7z -m0=LZMA:d=512m:fb=273 -ms ../$@ Fonts/
+
+JP-M/Fonts/MORPHEUS.ttf: nowar/NowarCompactRounded-Bold.ttf
+	mkdir -p JP-M/Fonts
+	cp $^ $@
+JP-M/Fonts/MORPHEUS_CYR.ttf: nowar/NowarCompactRounded-Bold.ttf
+	mkdir -p JP-M/Fonts
+	cp $^ $@
+JP-M/Fonts/FRIZQT__.ttf: nowar/unspec-NowarWideRoundedUI-JP-Medium.ttf
+	mkdir -p JP-M/Fonts
+	cp $^ $@
+JP-M/Fonts/FRIZQT___CYR.ttf: nowar/unspec-NowarWideRoundedUI-JP-Medium.ttf
+	mkdir -p JP-M/Fonts
+	cp $^ $@
+JP-M/Fonts/ARIALN.ttf: nowar/unspec-NowarCompactRoundedUI-JP-Medium.ttf
+	mkdir -p JP-M/Fonts
+	cp $^ $@
+JP-M/Fonts/skurri.ttf: nowar/NowarWideRounded-Medium.ttf
+	mkdir -p JP-M/Fonts
+	cp $^ $@
+JP-M/Fonts/SKURRI_CYR.ttf: nowar/NowarWideRounded-Medium.ttf
+	mkdir -p JP-M/Fonts
+	cp $^ $@
+
+JP-M/Fonts/ARKai_C.ttf: nowar/gbk-NowarWideRounded-CN-Medium.ttf
+	mkdir -p JP-M/Fonts
+	cp $^ $@
+JP-M/Fonts/ARKai_T.ttf: nowar/gbk-NowarWarcraftRounded-CN-Medium.ttf
+	mkdir -p JP-M/Fonts
+	cp $^ $@
+JP-M/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CN-Medium.ttf
+	mkdir -p JP-M/Fonts
+	cp $^ $@
+
+JP-M/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-TW-Medium.ttf
+	mkdir -p JP-M/Fonts
+	cp $^ $@
+JP-M/Fonts/bHEI00M.ttf: nowar/big5-NowarRounded-TW-Medium.ttf
+	mkdir -p JP-M/Fonts
+	cp $^ $@
+JP-M/Fonts/bHEI01B.ttf: nowar/big5-NowarCompactRounded-TW-Medium.ttf
+	mkdir -p JP-M/Fonts
+	cp $^ $@
+JP-M/Fonts/blei00d.ttf: nowar/big5-NowarWarcraftRounded-TW-Medium.ttf
+	mkdir -p JP-M/Fonts
+	cp $^ $@
+
+JP-M/Fonts/2002.ttf: nowar/korean-NowarWarcraftRounded-CL-Medium.ttf
+	mkdir -p JP-M/Fonts
+	cp $^ $@
+JP-M/Fonts/2002B.ttf: nowar/korean-NowarWideRounded-CL-Medium.ttf
+	mkdir -p JP-M/Fonts
+	cp $^ $@
+JP-M/Fonts/K_Damage.ttf: nowar/korean-NowarWideRounded-CL-Medium.ttf
+	mkdir -p JP-M/Fonts
+	cp $^ $@
+JP-M/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Medium.ttf
+	mkdir -p JP-M/Fonts
+	cp $^ $@
+
 CL-M-${VERSION}.7z: CL-M/Fonts/MORPHEUS.ttf CL-M/Fonts/FRIZQT__.ttf CL-M/Fonts/ARIALN.ttf CL-M/Fonts/skurri.ttf \
                  CL-M/Fonts/MORPHEUS_CYR.ttf CL-M/Fonts/FRIZQT___CYR.ttf CL-M/Fonts/SKURRI_CYR.ttf \
                  CL-M/Fonts/ARKai_C.ttf CL-M/Fonts/ARKai_T.ttf CL-M/Fonts/ARHei.ttf \
@@ -5837,6 +6931,73 @@ HK-B/Fonts/K_Damage.ttf: nowar/korean-NowarWideRounded-CL-Bold.ttf
 	cp $^ $@
 HK-B/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Bold.ttf
 	mkdir -p HK-B/Fonts
+	cp $^ $@
+
+JP-B-${VERSION}.7z: JP-B/Fonts/MORPHEUS.ttf JP-B/Fonts/FRIZQT__.ttf JP-B/Fonts/ARIALN.ttf JP-B/Fonts/skurri.ttf \
+                 JP-B/Fonts/MORPHEUS_CYR.ttf JP-B/Fonts/FRIZQT___CYR.ttf JP-B/Fonts/SKURRI_CYR.ttf \
+                 JP-B/Fonts/ARKai_C.ttf JP-B/Fonts/ARKai_T.ttf JP-B/Fonts/ARHei.ttf \
+                 JP-B/Fonts/bKAI00M.ttf JP-B/Fonts/bHEI00M.ttf JP-B/Fonts/bHEI01B.ttf JP-B/Fonts/blei00d.ttf \
+                 JP-B/Fonts/2002.ttf JP-B/Fonts/2002B.ttf JP-B/Fonts/K_Damage.ttf JP-B/Fonts/K_Pagetext.ttf
+	cd JP-B ; \
+	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
+	7z a -t7z -m0=LZMA:d=512m:fb=273 -ms ../$@ Fonts/
+
+JP-B/Fonts/MORPHEUS.ttf: nowar/NowarCompactRounded-ExtraBold.ttf
+	mkdir -p JP-B/Fonts
+	cp $^ $@
+JP-B/Fonts/MORPHEUS_CYR.ttf: nowar/NowarCompactRounded-ExtraBold.ttf
+	mkdir -p JP-B/Fonts
+	cp $^ $@
+JP-B/Fonts/FRIZQT__.ttf: nowar/unspec-NowarWideRoundedUI-JP-Bold.ttf
+	mkdir -p JP-B/Fonts
+	cp $^ $@
+JP-B/Fonts/FRIZQT___CYR.ttf: nowar/unspec-NowarWideRoundedUI-JP-Bold.ttf
+	mkdir -p JP-B/Fonts
+	cp $^ $@
+JP-B/Fonts/ARIALN.ttf: nowar/unspec-NowarCompactRoundedUI-JP-Bold.ttf
+	mkdir -p JP-B/Fonts
+	cp $^ $@
+JP-B/Fonts/skurri.ttf: nowar/NowarWideRounded-Bold.ttf
+	mkdir -p JP-B/Fonts
+	cp $^ $@
+JP-B/Fonts/SKURRI_CYR.ttf: nowar/NowarWideRounded-Bold.ttf
+	mkdir -p JP-B/Fonts
+	cp $^ $@
+
+JP-B/Fonts/ARKai_C.ttf: nowar/gbk-NowarWideRounded-CN-Bold.ttf
+	mkdir -p JP-B/Fonts
+	cp $^ $@
+JP-B/Fonts/ARKai_T.ttf: nowar/gbk-NowarWarcraftRounded-CN-Bold.ttf
+	mkdir -p JP-B/Fonts
+	cp $^ $@
+JP-B/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CN-Bold.ttf
+	mkdir -p JP-B/Fonts
+	cp $^ $@
+
+JP-B/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-TW-Bold.ttf
+	mkdir -p JP-B/Fonts
+	cp $^ $@
+JP-B/Fonts/bHEI00M.ttf: nowar/big5-NowarRounded-TW-Bold.ttf
+	mkdir -p JP-B/Fonts
+	cp $^ $@
+JP-B/Fonts/bHEI01B.ttf: nowar/big5-NowarCompactRounded-TW-Bold.ttf
+	mkdir -p JP-B/Fonts
+	cp $^ $@
+JP-B/Fonts/blei00d.ttf: nowar/big5-NowarWarcraftRounded-TW-Bold.ttf
+	mkdir -p JP-B/Fonts
+	cp $^ $@
+
+JP-B/Fonts/2002.ttf: nowar/korean-NowarWarcraftRounded-CL-Bold.ttf
+	mkdir -p JP-B/Fonts
+	cp $^ $@
+JP-B/Fonts/2002B.ttf: nowar/korean-NowarWideRounded-CL-Bold.ttf
+	mkdir -p JP-B/Fonts
+	cp $^ $@
+JP-B/Fonts/K_Damage.ttf: nowar/korean-NowarWideRounded-CL-Bold.ttf
+	mkdir -p JP-B/Fonts
+	cp $^ $@
+JP-B/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Bold.ttf
+	mkdir -p JP-B/Fonts
 	cp $^ $@
 
 CL-B-${VERSION}.7z: CL-B/Fonts/MORPHEUS.ttf CL-B/Fonts/FRIZQT__.ttf CL-B/Fonts/ARIALN.ttf CL-B/Fonts/skurri.ttf \
