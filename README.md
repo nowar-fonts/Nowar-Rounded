@@ -14,7 +14,7 @@ This is Nowar Rounded, font packs for _World of Warcraft_ that support all langu
 
 [Latest release](https://github.com/CyanoHao/Nowar-Rounded/releases)
 
-Nowar Rounded is provided in 4 weights and 5 regional variants.
+Nowar Rounded is provided in 4 weights and 6 regional variants.
 
 ### Weights
 
@@ -33,17 +33,22 @@ The shape of Chinese characters follows different standards in different regiona
 | CN  | Mainland China (UI)           | Mainland China | Taiwan    | Classic |
 | TW  | Taiwan (UI)                   | Mainland China | Taiwan    | Classic |
 | HK  | Hong Kong (UI)                | Mainland China | Hong Kong | Classic |
+| JP  | Japan (UI)                    | Mainland China | Taiwan    | Classic |
 | CL  | Classic (UI)                  | Classic        | Classic   | Classic |
 | OSF | Classic (UI, Oldstyle Figure) | Classic        | Classic   | Classic |
 
 * European: English, Español (AL), Português, Deutsch, Español (EU), Français, Italiano, and Русский.
 * UI: Ambiguous punctations are treated as Western; Kana are proportional.
 
+### SharedMedia Font Provider
+
+Nowar Rounded is also avialable as an addon (REALLY HUGE!), to register Nowar Rounded typeface to SharedMedia.
+
 ## How to Build
 
 Dependencies: Python and [otfcc](https://github.com/caryll/otfcc).
 
-Put Resource Han Rounded TTF files to `rhr/`, and Noto Sans TTF files to `noto/sans`, then just `make` it.
+Put Resource Han Rounded TTF files to `rhr/`, and Noto Sans TTF files to `noto/sans/`, then just `make` it.
 
 ## Credit
 

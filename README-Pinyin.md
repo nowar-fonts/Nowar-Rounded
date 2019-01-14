@@ -16,13 +16,13 @@ Yǒu’ài Yuánjiǎo Zìtǐ shì «Móshòu Shìjiè» zìtǐbāo
 
 [Zuìxīn de bǎnběn](https://github.com/CyanoHao/Nowar-Rounded/releases)
 
-Yǒu’ài Yuánjiǎo Zìtǐ yǒu 4 zhǒng zìtǐ cūxì hé 5 zhǒng dìqū biànhuà de zìtǐ xíngtài.
+Yǒu’ài Yuánjiǎo Zìtǐ yǒu 4 zhǒng zìtǐ cūxì hé 6 zhǒng dìqū biànhuà de zìtǐ xíngtài.
 
 ### Zìtǐ cūxì
 
 * L: xì
 * R: chángguī
-* M: jièyú chángguī hé cū zhījiān
+* M: zhōngděng
 * B: cū
 * [Morpheus (xīfāng yǔyán biāotí zìtǐ) cǎiyòngle gèng xì huòzhě gèng cū de zìtǐ cūxì, yònglái qiángdiào tūchū.]
 
@@ -30,13 +30,18 @@ Yǒu’ài Yuánjiǎo Zìtǐ yǒu 4 zhǒng zìtǐ cūxì hé 5 zho�
 
 Bù tóng de dìqū biànhuà de zìtǐ xíngtài cǎiyòng le bù tóng de zìtǐ xíngtài biāozhǔn.
 
-|     | Xīfāng yǔyán | Jiǎntǐ zhōngwén | Fántǐ zhōngwén | Hánguó yǔ |
-| --- | --- | --- | --- | --- |
-| CN  | Zhōngguó dàlù zìtǐ xíngtài (UI xíngshì) | Zhōngguó dàlù zìtǐ xíngtài | Táiwān zìtǐ xíngtài | Chuántǒng de zìtǐ xíngtài |
-| TW  | Táiwān zìtǐ xíngtài (UI xíngshì) | Zhōngguó dàlù zìtǐ xíngtài | Táiwān zìtǐ xíngtài | Chuántǒng de zìtǐ xíngtài |
-| HK  | Xiānggǎng zìtǐ xíngtài (UI xíngshì) | Zhōngguó dàlù zìtǐ xíngtài | Xiānggǎng zìtǐ xíngtài | Chuántǒng de zìtǐ xíngtài |
-| CL  | Chuántǒng de zìtǐ xíngtài (UI xíngshì) | Chuántǒng de zìtǐ xíngtài | Chuántǒng de zìtǐ xíngtài | Chuántǒng de zìtǐ xíngtài |
-| OSF | Chuántǒng de zìtǐ xíngtài (UI xíngshì, bù duìqí jīzhǔnxiàn de shùzì) | Chuántǒng de zìtǐ xíngtài | Chuántǒng de zìtǐ xíngtài | Chuántǒng de zìtǐ xíngtài |
+|     | Xīfāng yǔyán                                            | Jiǎntǐ zhōngwén | Fántǐ zhōngwén | Hánguó yǔ    |
+| --- | ------------------------------------------------------- | --------------- | -------------- | ------------ |
+| CN  | Zhōngguó dàlù (UI xíngshì)                              | Zhōngguó dàlù   | Táiwān         | Chuántǒng de |
+| TW  | Táiwān (UI xíngshì)                                     | Zhōngguó dàlù   | Táiwān         | Chuántǒng de |
+| HK  | Xiānggǎng (UI xíngshì)                                  | Zhōngguó dàlù   | Xiānggǎng      | Chuántǒng de |
+| JP  | Rìběn (UI xíngshì)                                      | Zhōngguó dàlù   | Táiwān         | Chuántǒng de |
+| CL  | Chuántǒng de (UI xíngshì)                               | Chuántǒng de    | Chuántǒng de   | Chuántǒng de |
+| OSF | Chuántǒng de (UI xíngshì, bù duìqí jīzhǔnxiàn de shùzì) | Chuántǒng de    | Chuántǒng de   | Chuántǒng de |
 
 * Xīfāng yǔyán: Yīngyǔ, Xībānyá yǔ (Lādīng Měizhōu), Pútáoyá yǔ, Déyǔ, Xībānyá yǔ (Ōuzhōu), Fǎyǔ, Yìdàlì yǔ, Éyǔ.
 * UI xíngshì: bèi zhōngwén hé xīfāng wénzì gòngyòng de biāodiǎn fúhào, dōu bèi dāngzuò xīfāng wénzì de biāodiǎn fúhào; Rìyǔ jiǎmíng de kuāndù shì chéngbǐlì de.
+
+### SharedMedia zìtǐbāo
+
+Yǒu’ài Yuánjiǎo Zìtǐ yě kěyǐ yǐ chājiàn de xíngshì ānzhuāng (FĒICHÁNG DE DÀ!), qǐyòng zhīhòu huì xiàng SharedMedia zhùcè Yǒu’ài Yuánjiǎo zìtǐ jiāzú.

@@ -12,7 +12,7 @@ encoding=(unspec gbk big5 korean)
 cat >Makefile <<EOF
 VERSION = 0.1.3
 
-all: SharedMedia-NowarRounded-\${VERSION}.7z $(echo {CN,TW,HK,CL,OSF}-{L,R,M,B}-\${VERSION}.7z)
+all: SharedMedia-NowarRounded-\${VERSION}.7z $(echo {CN,TW,HK,JP,CL,OSF}-{L,R,M,B}-\${VERSION}.7z)
 
 clean:
 	-rm -rf noto/*/*.otd noto/rounded/ noto/osf/
