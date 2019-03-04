@@ -40,7 +40,7 @@ Bù tóng de dìqū biànhuà de zìtǐ xíngtài cǎiyòng le bù 
 | OSF | Chuántǒng de (UI xíngshì, bù duìqí jīzhǔnxiàn de shùzì) | Chuántǒng de    | Chuántǒng de   | Chuántǒng de |
 
 * Xīfāng yǔyán: Yīngyǔ, Xībānyá yǔ (Lādīng Měizhōu), Pútáoyá yǔ, Déyǔ, Xībānyá yǔ (Ōuzhōu), Fǎyǔ, Yìdàlì yǔ, Éyǔ.
-* UI xíngshì: bèi zhōngwén hé xīfāng wénzì gòngyòng de biāodiǎn fúhào, dōu bèi dāngzuò xīfāng wénzì de biāodiǎn fúhào; Rìyǔ jiǎmíng de kuāndù shì chéngbǐlì de.
+* UI xíngshì: bèi zhōngwén hé xīfāng wénzì gòngyòng de biāodiǎn fúhào, dōu bèi dāngzuò xīfāng wénzì de biāodiǎn fúhào; zhōngwén de biāodiǎn fúhào shì bàn kuāndù de; Rìyǔ jiǎmíng de kuāndù shì chéngbǐlì de.
 
 ### SharedMedia zìtǐbāo
 

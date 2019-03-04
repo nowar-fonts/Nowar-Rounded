@@ -1,6 +1,6 @@
 import sys
 import json
-
+from fontlib.merge import MergeBelow
 
 def NameFont(font, region, weight, version):
 
@@ -192,11 +192,7 @@ if __name__ == '__main__':
 	for n in ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']:
 		baseFont['glyf'][n] = numFont['glyf'][n]
 
-	for (uniId, glyphName) in asianFont['cmap'].items():
-		if uniId not in baseFont['cmap'].keys():
-			baseFont['cmap'][uniId] = glyphName
-			if glyphName not in baseFont['glyf'].keys():
-				baseFont['glyf'][glyphName] = asianFont['glyf'][glyphName]
+	MergeBelow(baseFont, asianFont)
 
 	# quotes, em-dash and ellipsis
 	for u in [0x2014, 0x2018, 0x2019, 0x201C, 0x201D, 0x2026]:

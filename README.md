@@ -38,7 +38,7 @@ The shape of Chinese characters follows different standards in different regiona
 | OSF | Classic (UI, Oldstyle Figure) | Classic        | Classic   | Classic |
 
 * European: English, Español (AL), Português, Deutsch, Español (EU), Français, Italiano, and Русский.
-* UI: Ambiguous punctations are treated as Western; Kana are proportional.
+* UI: Ambiguous punctations are treated as Western; CJK puctations are half-width; Kana are proportional.
 
 ### SharedMedia Font Provider
 

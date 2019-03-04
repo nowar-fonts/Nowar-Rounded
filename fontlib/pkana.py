@@ -23,3 +23,13 @@ def ProportionalizeKana(font):
 						Transform(glyph, 1, 0, 0, 1, d['dx'], 0)
 					if 'dWidth' in d:
 						ChangeAdvanceWidth(glyph, d['dWidth'])
+
+def ApplyPalt(font):
+	for palt in GetLookupPalt(font):
+		for sub in palt['subtables']:
+			for (n, d) in sub.items():
+				glyph = font['glyf'][n]
+				if 'dx' in d:
+					Transform(glyph, 1, 0, 0, 1, d['dx'], 0)
+				if 'dWidth' in d:
+					ChangeAdvanceWidth(glyph, d['dWidth'])

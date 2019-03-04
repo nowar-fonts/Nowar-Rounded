@@ -1,7 +1,7 @@
 import sys
 import json
 
-from fontlib.pkana import ProportionalizeKana
+from fontlib.pkana import ApplyPalt
 from fontlib.merge import MergeBelow
 
 def NameFont(font, region, weight, version):
@@ -194,7 +194,7 @@ if __name__ == '__main__':
 	baseFont['OS_2']['ulCodePageRange1'][encoding] = True
 	NameFont(baseFont, region2, weight, version)
 
-	ProportionalizeKana(asianFont)
+	ApplyPalt(asianFont)
 	MergeBelow(baseFont, asianFont)
 
 	outStr = json.dumps(baseFont, ensure_ascii=False)

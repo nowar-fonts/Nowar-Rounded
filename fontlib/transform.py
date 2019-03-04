@@ -5,12 +5,16 @@ def Transform(glyph, a, b, c, d, dx, dy):
 	if 'contours' in glyph:
 		for contour in glyph['contours']:
 			for point in contour:
-				point['x'] = a * point['x'] + b * point['y'] + dx
-				point['y'] = c * point['x'] + d * point['y'] + dy
+				x = point['x']
+				y = point['y']
+				point['x'] = a * x + b * y + dx
+				point['y'] = c * x + d * y + dy
 	if 'references' in glyph:
 		for reference in glyph['references']:
-			reference['x'] = a * reference['x'] + b * reference['y'] + dx
-			reference['y'] = c * reference['x'] + d * reference['y'] + dy
+			x = reference['x']
+			y = reference['y']
+			reference['x'] = a * x + b * y + dx
+			reference['y'] = c * x + d * y + dy
 
 def ChangeAdvanceWidth(glyph, adv):
 	glyph['advanceWidth'] += adv
