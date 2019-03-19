@@ -3,6 +3,7 @@ import json
 
 from fontlib.pkana import ApplyPalt
 from fontlib.merge import MergeBelow
+from fontlib.transform import Transform
 
 def NameFont(font, region, weight, version):
 
@@ -191,11 +192,17 @@ if __name__ == '__main__':
 	with open("rhr/ResourceHanRounded{}-{}.otd".format(region, weight), 'rb') as asianFile:
 		asianFont = json.loads(asianFile.read().decode('UTF-8', errors = 'replace'))
 
+	with open("noto/emoji/NotoEmoji-Regular.otd", 'rb') as emojiFile:
+		emojiFont = json.loads(emojiFile.read().decode('UTF-8', errors = 'replace'))
+
 	baseFont['OS_2']['ulCodePageRange1'][encoding] = True
 	NameFont(baseFont, region2, weight, version)
 
 	ApplyPalt(asianFont)
 	MergeBelow(baseFont, asianFont)
+	for _, glyph in emojiFont['glyf'].items():
+		Transform(glyph, 1000 / 2048, 0, 0, 1000 / 2048, 0, 0)
+	MergeBelow(baseFont, emojiFont)
 
 	outStr = json.dumps(baseFont, ensure_ascii=False)
 	with open("nowar/{}-NowarWideRoundedUI-{}-{}.otd".format(encoding, region, weight), 'w') as outFile:

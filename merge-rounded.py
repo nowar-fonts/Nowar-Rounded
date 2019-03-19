@@ -1,6 +1,7 @@
 import sys
 import json
 from fontlib.merge import MergeBelow
+from fontlib.transform import Transform
 
 def NameFont(font, region, weight, version):
 
@@ -183,10 +184,16 @@ if __name__ == '__main__':
 	with open("rhr/ResourceHanRounded{}-{}.otd".format(region, weight), 'rb') as asianFile:
 		asianFont = json.loads(asianFile.read().decode('UTF-8', errors = 'replace'))
 
+	with open("noto/emoji/NotoEmoji-Regular.otd", 'rb') as emojiFile:
+		emojiFont = json.loads(emojiFile.read().decode('UTF-8', errors = 'replace'))
+
 	baseFont['OS_2']['ulCodePageRange1'][encoding] = True
 	NameFont(baseFont, 'Classic' if region == 'CL' else region, weight, version)
 
 	MergeBelow(baseFont, asianFont)
+	for _, glyph in emojiFont['glyf'].items():
+		Transform(glyph, 1000 / 2048, 0, 0, 1000 / 2048, 0, 0)
+	MergeBelow(baseFont, emojiFont)
 
 	# quotes, em-dash and ellipsis
 	for u in [0x2014, 0x2018, 0x2019, 0x201C, 0x201D, 0x2026]:

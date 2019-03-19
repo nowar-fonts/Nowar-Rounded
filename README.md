@@ -52,8 +52,8 @@ Put Resource Han Rounded TTF files to `rhr/`, and Noto Sans TTF files to `noto/s
 
 ## Credit
 
-This project is based on [Sarasa Gothic](https://github.com/be5invis/Sarasa-Gothic) by **Belleve Invis**.
+Latin, Greek and Cyrillic characters are from Noto Round, which is a part of Nowar Rounded project. Noto Rounded is derived from [Noto Sans](https://github.com/googlei18n/noto-fonts) by Google.
 
-Latin, Greek and Cyrillic characters are from Noto Round, which is a part of Nowar Rounded project. Noto Rounded is derived from [Noto Sans](https://github.com/googlei18n/noto-fonts) by **Google**.
+Emoji (<ruby>絵文字<rt>えもじ</rt></ruby>) are from [Noto Emoji](https://github.com/googlei18n/noto-emoji) by Google.
 
-CJK Ideographs, Kana and Hangul are from [Resource Han Rounded](https://github.com/CyanoHao/Resource-Han-Rounded), which is derived from [Source Han Sans](https://github.com/adobe-fonts/source-han-sans) by **Adobe**.
+CJK Ideographs, Kana and Hangul are from [Resource Han Rounded](https://github.com/CyanoHao/Resource-Han-Rounded), which is derived from [Source Han Sans](https://github.com/adobe-fonts/source-han-sans) by Adobe.

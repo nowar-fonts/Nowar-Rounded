@@ -1,4 +1,4 @@
-## Interface: 81000
+## Interface: 80105
 
 ## Title: Nowar Rounded Typeface
 ## Notes: Register Nowar Rounded typeface to SharedMedia.
@@ -7,7 +7,7 @@
 ## Title-zhTW: 有愛圓體
 ## Notes-zhTW: 向 SharedMedia 登錄有愛圓體字體。
 
-## Version: 0.1.3
+## Version: 0.2.0
 ## Author: Cyano Hao
 ## X-Category: Miscellaneous
 ## X-Credits: This addon is derived from on SharedMediaAdditionalFont.
