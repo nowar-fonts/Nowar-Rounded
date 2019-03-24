@@ -1,7 +1,7 @@
 import sys
 import json
 from fontlib.merge import MergeBelow
-from fontlib.transform import Transform
+from fontlib.transform import Transform, ChangeAdvanceWidth
 
 def NameFont(font, region, weight, version):
 
@@ -193,8 +193,22 @@ if __name__ == '__main__':
 	baseFont['OS_2']['ulCodePageRange1'][encoding] = True
 	NameFont(baseFont, 'Classic' if region == 'CL' else region, weight, version)
 
+	maxWidth = 490
+	numWidth = numFont['glyf']['zero']['advanceWidth']
+	changeWidth = maxWidth - numWidth if numWidth > maxWidth else 0
+
 	for n in ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']:
-		baseFont['glyf'][n] = numFont['glyf'][n]
+		glyph = numFont['glyf'][n]
+		width = glyph['advanceWidth']
+		pGlyph = numFont['glyf'][n + '.lf']
+		pWidth = pGlyph['advanceWidth']
+		if pWidth < width:
+			glyph = pGlyph
+			width = pWidth
+		if changeWidth != 0:
+			ChangeAdvanceWidth(glyph, changeWidth)
+			Transform(glyph, 1, 0, 0, 1, (changeWidth + 1) // 2, 0)
+		baseFont['glyf'][n] = glyph
 
 	MergeBelow(baseFont, asianFont)
 	for _, glyph in emojiFont['glyf'].items():
