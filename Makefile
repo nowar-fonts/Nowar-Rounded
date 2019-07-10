@@ -1,4 +1,4 @@
-VERSION = 0.2.1
+VERSION = 0.2.2
 
 all: SharedMedia-NowarRounded-${VERSION}.7z NowarRounded-CN-L-${VERSION}.7z NowarRounded-CN-R-${VERSION}.7z NowarRounded-CN-M-${VERSION}.7z NowarRounded-CN-B-${VERSION}.7z NowarRounded-TW-L-${VERSION}.7z NowarRounded-TW-R-${VERSION}.7z NowarRounded-TW-M-${VERSION}.7z NowarRounded-TW-B-${VERSION}.7z NowarRounded-HK-L-${VERSION}.7z NowarRounded-HK-R-${VERSION}.7z NowarRounded-HK-M-${VERSION}.7z NowarRounded-HK-B-${VERSION}.7z NowarRounded-JP-L-${VERSION}.7z NowarRounded-JP-R-${VERSION}.7z NowarRounded-JP-M-${VERSION}.7z NowarRounded-JP-B-${VERSION}.7z NowarRounded-CL-L-${VERSION}.7z NowarRounded-CL-R-${VERSION}.7z NowarRounded-CL-M-${VERSION}.7z NowarRounded-CL-B-${VERSION}.7z NowarRounded-OSF-L-${VERSION}.7z NowarRounded-OSF-R-${VERSION}.7z NowarRounded-OSF-M-${VERSION}.7z NowarRounded-OSF-B-${VERSION}.7z
 
@@ -5532,7 +5532,7 @@ nowar/korean-NowarWarcraftRounded-OSF-ExtraBold.otd: noto/osf/NotoRoundedOSF-Sem
 NowarRounded-CN-L-${VERSION}.7z: CN-L/Fonts/MORPHEUS.ttf CN-L/Fonts/FRIZQT__.ttf CN-L/Fonts/ARIALN.ttf CN-L/Fonts/skurri.ttf \
                  CN-L/Fonts/MORPHEUS_CYR.ttf CN-L/Fonts/FRIZQT___CYR.ttf CN-L/Fonts/SKURRI_CYR.ttf \
                  CN-L/Fonts/ARKai_C.ttf CN-L/Fonts/ARKai_T.ttf CN-L/Fonts/ARHei.ttf \
-                 CN-L/Fonts/bKAI00M.ttf CN-L/Fonts/bHEI00M.ttf CN-L/Fonts/bHEI01B.ttf CN-L/Fonts/blei00d.ttf \
+                 CN-L/Fonts/arheiuhk_bd.ttf CN-L/Fonts/bKAI00M.ttf CN-L/Fonts/bHEI00M.ttf CN-L/Fonts/bHEI01B.ttf CN-L/Fonts/blei00d.ttf \
                  CN-L/Fonts/2002.ttf CN-L/Fonts/2002B.ttf CN-L/Fonts/K_Damage.ttf CN-L/Fonts/K_Pagetext.ttf
 	cd CN-L ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -5570,6 +5570,9 @@ CN-L/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CN-Light.ttf
 	mkdir -p CN-L/Fonts
 	cp $^ $@
 
+CN-L/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-TW-Light.ttf
+	mkdir -p CN-L/Fonts
+	cp $^ $@
 CN-L/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-TW-Light.ttf
 	mkdir -p CN-L/Fonts
 	cp $^ $@
@@ -5599,7 +5602,7 @@ CN-L/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Light.ttf
 NowarRounded-TW-L-${VERSION}.7z: TW-L/Fonts/MORPHEUS.ttf TW-L/Fonts/FRIZQT__.ttf TW-L/Fonts/ARIALN.ttf TW-L/Fonts/skurri.ttf \
                  TW-L/Fonts/MORPHEUS_CYR.ttf TW-L/Fonts/FRIZQT___CYR.ttf TW-L/Fonts/SKURRI_CYR.ttf \
                  TW-L/Fonts/ARKai_C.ttf TW-L/Fonts/ARKai_T.ttf TW-L/Fonts/ARHei.ttf \
-                 TW-L/Fonts/bKAI00M.ttf TW-L/Fonts/bHEI00M.ttf TW-L/Fonts/bHEI01B.ttf TW-L/Fonts/blei00d.ttf \
+                 TW-L/Fonts/arheiuhk_bd.ttf TW-L/Fonts/bKAI00M.ttf TW-L/Fonts/bHEI00M.ttf TW-L/Fonts/bHEI01B.ttf TW-L/Fonts/blei00d.ttf \
                  TW-L/Fonts/2002.ttf TW-L/Fonts/2002B.ttf TW-L/Fonts/K_Damage.ttf TW-L/Fonts/K_Pagetext.ttf
 	cd TW-L ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -5637,6 +5640,9 @@ TW-L/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CN-Light.ttf
 	mkdir -p TW-L/Fonts
 	cp $^ $@
 
+TW-L/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-TW-Light.ttf
+	mkdir -p TW-L/Fonts
+	cp $^ $@
 TW-L/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-TW-Light.ttf
 	mkdir -p TW-L/Fonts
 	cp $^ $@
@@ -5666,7 +5672,7 @@ TW-L/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Light.ttf
 NowarRounded-HK-L-${VERSION}.7z: HK-L/Fonts/MORPHEUS.ttf HK-L/Fonts/FRIZQT__.ttf HK-L/Fonts/ARIALN.ttf HK-L/Fonts/skurri.ttf \
                  HK-L/Fonts/MORPHEUS_CYR.ttf HK-L/Fonts/FRIZQT___CYR.ttf HK-L/Fonts/SKURRI_CYR.ttf \
                  HK-L/Fonts/ARKai_C.ttf HK-L/Fonts/ARKai_T.ttf HK-L/Fonts/ARHei.ttf \
-                 HK-L/Fonts/bKAI00M.ttf HK-L/Fonts/bHEI00M.ttf HK-L/Fonts/bHEI01B.ttf HK-L/Fonts/blei00d.ttf \
+                 HK-L/Fonts/arheiuhk_bd.ttf HK-L/Fonts/bKAI00M.ttf HK-L/Fonts/bHEI00M.ttf HK-L/Fonts/bHEI01B.ttf HK-L/Fonts/blei00d.ttf \
                  HK-L/Fonts/2002.ttf HK-L/Fonts/2002B.ttf HK-L/Fonts/K_Damage.ttf HK-L/Fonts/K_Pagetext.ttf
 	cd HK-L ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -5704,6 +5710,9 @@ HK-L/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CN-Light.ttf
 	mkdir -p HK-L/Fonts
 	cp $^ $@
 
+HK-L/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-HK-Light.ttf
+	mkdir -p HK-L/Fonts
+	cp $^ $@
 HK-L/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-HK-Light.ttf
 	mkdir -p HK-L/Fonts
 	cp $^ $@
@@ -5733,7 +5742,7 @@ HK-L/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Light.ttf
 NowarRounded-JP-L-${VERSION}.7z: JP-L/Fonts/MORPHEUS.ttf JP-L/Fonts/FRIZQT__.ttf JP-L/Fonts/ARIALN.ttf JP-L/Fonts/skurri.ttf \
                  JP-L/Fonts/MORPHEUS_CYR.ttf JP-L/Fonts/FRIZQT___CYR.ttf JP-L/Fonts/SKURRI_CYR.ttf \
                  JP-L/Fonts/ARKai_C.ttf JP-L/Fonts/ARKai_T.ttf JP-L/Fonts/ARHei.ttf \
-                 JP-L/Fonts/bKAI00M.ttf JP-L/Fonts/bHEI00M.ttf JP-L/Fonts/bHEI01B.ttf JP-L/Fonts/blei00d.ttf \
+                 JP-L/Fonts/arheiuhk_bd.ttf JP-L/Fonts/bKAI00M.ttf JP-L/Fonts/bHEI00M.ttf JP-L/Fonts/bHEI01B.ttf JP-L/Fonts/blei00d.ttf \
                  JP-L/Fonts/2002.ttf JP-L/Fonts/2002B.ttf JP-L/Fonts/K_Damage.ttf JP-L/Fonts/K_Pagetext.ttf
 	cd JP-L ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -5771,6 +5780,9 @@ JP-L/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CN-Light.ttf
 	mkdir -p JP-L/Fonts
 	cp $^ $@
 
+JP-L/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-TW-Light.ttf
+	mkdir -p JP-L/Fonts
+	cp $^ $@
 JP-L/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-TW-Light.ttf
 	mkdir -p JP-L/Fonts
 	cp $^ $@
@@ -5800,7 +5812,7 @@ JP-L/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Light.ttf
 NowarRounded-CL-L-${VERSION}.7z: CL-L/Fonts/MORPHEUS.ttf CL-L/Fonts/FRIZQT__.ttf CL-L/Fonts/ARIALN.ttf CL-L/Fonts/skurri.ttf \
                  CL-L/Fonts/MORPHEUS_CYR.ttf CL-L/Fonts/FRIZQT___CYR.ttf CL-L/Fonts/SKURRI_CYR.ttf \
                  CL-L/Fonts/ARKai_C.ttf CL-L/Fonts/ARKai_T.ttf CL-L/Fonts/ARHei.ttf \
-                 CL-L/Fonts/bKAI00M.ttf CL-L/Fonts/bHEI00M.ttf CL-L/Fonts/bHEI01B.ttf CL-L/Fonts/blei00d.ttf \
+                 CL-L/Fonts/arheiuhk_bd.ttf CL-L/Fonts/bKAI00M.ttf CL-L/Fonts/bHEI00M.ttf CL-L/Fonts/bHEI01B.ttf CL-L/Fonts/blei00d.ttf \
                  CL-L/Fonts/2002.ttf CL-L/Fonts/2002B.ttf CL-L/Fonts/K_Damage.ttf CL-L/Fonts/K_Pagetext.ttf
 	cd CL-L ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -5838,6 +5850,9 @@ CL-L/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CL-Light.ttf
 	mkdir -p CL-L/Fonts
 	cp $^ $@
 
+CL-L/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-CL-Light.ttf
+	mkdir -p CL-L/Fonts
+	cp $^ $@
 CL-L/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-CL-Light.ttf
 	mkdir -p CL-L/Fonts
 	cp $^ $@
@@ -5867,7 +5882,7 @@ CL-L/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Light.ttf
 NowarRounded-OSF-L-${VERSION}.7z: OSF-L/Fonts/MORPHEUS.ttf OSF-L/Fonts/FRIZQT__.ttf OSF-L/Fonts/ARIALN.ttf OSF-L/Fonts/skurri.ttf \
                  OSF-L/Fonts/MORPHEUS_CYR.ttf OSF-L/Fonts/FRIZQT___CYR.ttf OSF-L/Fonts/SKURRI_CYR.ttf \
                  OSF-L/Fonts/ARKai_C.ttf OSF-L/Fonts/ARKai_T.ttf OSF-L/Fonts/ARHei.ttf \
-                 OSF-L/Fonts/bKAI00M.ttf OSF-L/Fonts/bHEI00M.ttf OSF-L/Fonts/bHEI01B.ttf OSF-L/Fonts/blei00d.ttf \
+                 OSF-L/Fonts/arheiuhk_bd.ttf OSF-L/Fonts/bKAI00M.ttf OSF-L/Fonts/bHEI00M.ttf OSF-L/Fonts/bHEI01B.ttf OSF-L/Fonts/blei00d.ttf \
                  OSF-L/Fonts/2002.ttf OSF-L/Fonts/2002B.ttf OSF-L/Fonts/K_Damage.ttf OSF-L/Fonts/K_Pagetext.ttf
 	cd OSF-L ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -5905,6 +5920,9 @@ OSF-L/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CL-Light.ttf
 	mkdir -p OSF-L/Fonts
 	cp $^ $@
 
+OSF-L/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-CL-Light.ttf
+	mkdir -p OSF-L/Fonts
+	cp $^ $@
 OSF-L/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-CL-Light.ttf
 	mkdir -p OSF-L/Fonts
 	cp $^ $@
@@ -5934,7 +5952,7 @@ OSF-L/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Light.ttf
 NowarRounded-CN-R-${VERSION}.7z: CN-R/Fonts/MORPHEUS.ttf CN-R/Fonts/FRIZQT__.ttf CN-R/Fonts/ARIALN.ttf CN-R/Fonts/skurri.ttf \
                  CN-R/Fonts/MORPHEUS_CYR.ttf CN-R/Fonts/FRIZQT___CYR.ttf CN-R/Fonts/SKURRI_CYR.ttf \
                  CN-R/Fonts/ARKai_C.ttf CN-R/Fonts/ARKai_T.ttf CN-R/Fonts/ARHei.ttf \
-                 CN-R/Fonts/bKAI00M.ttf CN-R/Fonts/bHEI00M.ttf CN-R/Fonts/bHEI01B.ttf CN-R/Fonts/blei00d.ttf \
+                 CN-R/Fonts/arheiuhk_bd.ttf CN-R/Fonts/bKAI00M.ttf CN-R/Fonts/bHEI00M.ttf CN-R/Fonts/bHEI01B.ttf CN-R/Fonts/blei00d.ttf \
                  CN-R/Fonts/2002.ttf CN-R/Fonts/2002B.ttf CN-R/Fonts/K_Damage.ttf CN-R/Fonts/K_Pagetext.ttf
 	cd CN-R ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -5972,6 +5990,9 @@ CN-R/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CN-Regular.ttf
 	mkdir -p CN-R/Fonts
 	cp $^ $@
 
+CN-R/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-TW-Regular.ttf
+	mkdir -p CN-R/Fonts
+	cp $^ $@
 CN-R/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-TW-Regular.ttf
 	mkdir -p CN-R/Fonts
 	cp $^ $@
@@ -6001,7 +6022,7 @@ CN-R/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Regular.ttf
 NowarRounded-TW-R-${VERSION}.7z: TW-R/Fonts/MORPHEUS.ttf TW-R/Fonts/FRIZQT__.ttf TW-R/Fonts/ARIALN.ttf TW-R/Fonts/skurri.ttf \
                  TW-R/Fonts/MORPHEUS_CYR.ttf TW-R/Fonts/FRIZQT___CYR.ttf TW-R/Fonts/SKURRI_CYR.ttf \
                  TW-R/Fonts/ARKai_C.ttf TW-R/Fonts/ARKai_T.ttf TW-R/Fonts/ARHei.ttf \
-                 TW-R/Fonts/bKAI00M.ttf TW-R/Fonts/bHEI00M.ttf TW-R/Fonts/bHEI01B.ttf TW-R/Fonts/blei00d.ttf \
+                 TW-R/Fonts/arheiuhk_bd.ttf TW-R/Fonts/bKAI00M.ttf TW-R/Fonts/bHEI00M.ttf TW-R/Fonts/bHEI01B.ttf TW-R/Fonts/blei00d.ttf \
                  TW-R/Fonts/2002.ttf TW-R/Fonts/2002B.ttf TW-R/Fonts/K_Damage.ttf TW-R/Fonts/K_Pagetext.ttf
 	cd TW-R ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -6039,6 +6060,9 @@ TW-R/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CN-Regular.ttf
 	mkdir -p TW-R/Fonts
 	cp $^ $@
 
+TW-R/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-TW-Regular.ttf
+	mkdir -p TW-R/Fonts
+	cp $^ $@
 TW-R/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-TW-Regular.ttf
 	mkdir -p TW-R/Fonts
 	cp $^ $@
@@ -6068,7 +6092,7 @@ TW-R/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Regular.ttf
 NowarRounded-HK-R-${VERSION}.7z: HK-R/Fonts/MORPHEUS.ttf HK-R/Fonts/FRIZQT__.ttf HK-R/Fonts/ARIALN.ttf HK-R/Fonts/skurri.ttf \
                  HK-R/Fonts/MORPHEUS_CYR.ttf HK-R/Fonts/FRIZQT___CYR.ttf HK-R/Fonts/SKURRI_CYR.ttf \
                  HK-R/Fonts/ARKai_C.ttf HK-R/Fonts/ARKai_T.ttf HK-R/Fonts/ARHei.ttf \
-                 HK-R/Fonts/bKAI00M.ttf HK-R/Fonts/bHEI00M.ttf HK-R/Fonts/bHEI01B.ttf HK-R/Fonts/blei00d.ttf \
+                 HK-R/Fonts/arheiuhk_bd.ttf HK-R/Fonts/bKAI00M.ttf HK-R/Fonts/bHEI00M.ttf HK-R/Fonts/bHEI01B.ttf HK-R/Fonts/blei00d.ttf \
                  HK-R/Fonts/2002.ttf HK-R/Fonts/2002B.ttf HK-R/Fonts/K_Damage.ttf HK-R/Fonts/K_Pagetext.ttf
 	cd HK-R ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -6106,6 +6130,9 @@ HK-R/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CN-Regular.ttf
 	mkdir -p HK-R/Fonts
 	cp $^ $@
 
+HK-R/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-HK-Regular.ttf
+	mkdir -p HK-R/Fonts
+	cp $^ $@
 HK-R/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-HK-Regular.ttf
 	mkdir -p HK-R/Fonts
 	cp $^ $@
@@ -6135,7 +6162,7 @@ HK-R/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Regular.ttf
 NowarRounded-JP-R-${VERSION}.7z: JP-R/Fonts/MORPHEUS.ttf JP-R/Fonts/FRIZQT__.ttf JP-R/Fonts/ARIALN.ttf JP-R/Fonts/skurri.ttf \
                  JP-R/Fonts/MORPHEUS_CYR.ttf JP-R/Fonts/FRIZQT___CYR.ttf JP-R/Fonts/SKURRI_CYR.ttf \
                  JP-R/Fonts/ARKai_C.ttf JP-R/Fonts/ARKai_T.ttf JP-R/Fonts/ARHei.ttf \
-                 JP-R/Fonts/bKAI00M.ttf JP-R/Fonts/bHEI00M.ttf JP-R/Fonts/bHEI01B.ttf JP-R/Fonts/blei00d.ttf \
+                 JP-R/Fonts/arheiuhk_bd.ttf JP-R/Fonts/bKAI00M.ttf JP-R/Fonts/bHEI00M.ttf JP-R/Fonts/bHEI01B.ttf JP-R/Fonts/blei00d.ttf \
                  JP-R/Fonts/2002.ttf JP-R/Fonts/2002B.ttf JP-R/Fonts/K_Damage.ttf JP-R/Fonts/K_Pagetext.ttf
 	cd JP-R ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -6173,6 +6200,9 @@ JP-R/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CN-Regular.ttf
 	mkdir -p JP-R/Fonts
 	cp $^ $@
 
+JP-R/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-TW-Regular.ttf
+	mkdir -p JP-R/Fonts
+	cp $^ $@
 JP-R/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-TW-Regular.ttf
 	mkdir -p JP-R/Fonts
 	cp $^ $@
@@ -6202,7 +6232,7 @@ JP-R/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Regular.ttf
 NowarRounded-CL-R-${VERSION}.7z: CL-R/Fonts/MORPHEUS.ttf CL-R/Fonts/FRIZQT__.ttf CL-R/Fonts/ARIALN.ttf CL-R/Fonts/skurri.ttf \
                  CL-R/Fonts/MORPHEUS_CYR.ttf CL-R/Fonts/FRIZQT___CYR.ttf CL-R/Fonts/SKURRI_CYR.ttf \
                  CL-R/Fonts/ARKai_C.ttf CL-R/Fonts/ARKai_T.ttf CL-R/Fonts/ARHei.ttf \
-                 CL-R/Fonts/bKAI00M.ttf CL-R/Fonts/bHEI00M.ttf CL-R/Fonts/bHEI01B.ttf CL-R/Fonts/blei00d.ttf \
+                 CL-R/Fonts/arheiuhk_bd.ttf CL-R/Fonts/bKAI00M.ttf CL-R/Fonts/bHEI00M.ttf CL-R/Fonts/bHEI01B.ttf CL-R/Fonts/blei00d.ttf \
                  CL-R/Fonts/2002.ttf CL-R/Fonts/2002B.ttf CL-R/Fonts/K_Damage.ttf CL-R/Fonts/K_Pagetext.ttf
 	cd CL-R ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -6240,6 +6270,9 @@ CL-R/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CL-Regular.ttf
 	mkdir -p CL-R/Fonts
 	cp $^ $@
 
+CL-R/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-CL-Regular.ttf
+	mkdir -p CL-R/Fonts
+	cp $^ $@
 CL-R/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-CL-Regular.ttf
 	mkdir -p CL-R/Fonts
 	cp $^ $@
@@ -6269,7 +6302,7 @@ CL-R/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Regular.ttf
 NowarRounded-OSF-R-${VERSION}.7z: OSF-R/Fonts/MORPHEUS.ttf OSF-R/Fonts/FRIZQT__.ttf OSF-R/Fonts/ARIALN.ttf OSF-R/Fonts/skurri.ttf \
                  OSF-R/Fonts/MORPHEUS_CYR.ttf OSF-R/Fonts/FRIZQT___CYR.ttf OSF-R/Fonts/SKURRI_CYR.ttf \
                  OSF-R/Fonts/ARKai_C.ttf OSF-R/Fonts/ARKai_T.ttf OSF-R/Fonts/ARHei.ttf \
-                 OSF-R/Fonts/bKAI00M.ttf OSF-R/Fonts/bHEI00M.ttf OSF-R/Fonts/bHEI01B.ttf OSF-R/Fonts/blei00d.ttf \
+                 OSF-R/Fonts/arheiuhk_bd.ttf OSF-R/Fonts/bKAI00M.ttf OSF-R/Fonts/bHEI00M.ttf OSF-R/Fonts/bHEI01B.ttf OSF-R/Fonts/blei00d.ttf \
                  OSF-R/Fonts/2002.ttf OSF-R/Fonts/2002B.ttf OSF-R/Fonts/K_Damage.ttf OSF-R/Fonts/K_Pagetext.ttf
 	cd OSF-R ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -6307,6 +6340,9 @@ OSF-R/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CL-Regular.ttf
 	mkdir -p OSF-R/Fonts
 	cp $^ $@
 
+OSF-R/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-CL-Regular.ttf
+	mkdir -p OSF-R/Fonts
+	cp $^ $@
 OSF-R/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-CL-Regular.ttf
 	mkdir -p OSF-R/Fonts
 	cp $^ $@
@@ -6336,7 +6372,7 @@ OSF-R/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Regular.ttf
 NowarRounded-CN-M-${VERSION}.7z: CN-M/Fonts/MORPHEUS.ttf CN-M/Fonts/FRIZQT__.ttf CN-M/Fonts/ARIALN.ttf CN-M/Fonts/skurri.ttf \
                  CN-M/Fonts/MORPHEUS_CYR.ttf CN-M/Fonts/FRIZQT___CYR.ttf CN-M/Fonts/SKURRI_CYR.ttf \
                  CN-M/Fonts/ARKai_C.ttf CN-M/Fonts/ARKai_T.ttf CN-M/Fonts/ARHei.ttf \
-                 CN-M/Fonts/bKAI00M.ttf CN-M/Fonts/bHEI00M.ttf CN-M/Fonts/bHEI01B.ttf CN-M/Fonts/blei00d.ttf \
+                 CN-M/Fonts/arheiuhk_bd.ttf CN-M/Fonts/bKAI00M.ttf CN-M/Fonts/bHEI00M.ttf CN-M/Fonts/bHEI01B.ttf CN-M/Fonts/blei00d.ttf \
                  CN-M/Fonts/2002.ttf CN-M/Fonts/2002B.ttf CN-M/Fonts/K_Damage.ttf CN-M/Fonts/K_Pagetext.ttf
 	cd CN-M ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -6374,6 +6410,9 @@ CN-M/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CN-Medium.ttf
 	mkdir -p CN-M/Fonts
 	cp $^ $@
 
+CN-M/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-TW-Medium.ttf
+	mkdir -p CN-M/Fonts
+	cp $^ $@
 CN-M/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-TW-Medium.ttf
 	mkdir -p CN-M/Fonts
 	cp $^ $@
@@ -6403,7 +6442,7 @@ CN-M/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Medium.ttf
 NowarRounded-TW-M-${VERSION}.7z: TW-M/Fonts/MORPHEUS.ttf TW-M/Fonts/FRIZQT__.ttf TW-M/Fonts/ARIALN.ttf TW-M/Fonts/skurri.ttf \
                  TW-M/Fonts/MORPHEUS_CYR.ttf TW-M/Fonts/FRIZQT___CYR.ttf TW-M/Fonts/SKURRI_CYR.ttf \
                  TW-M/Fonts/ARKai_C.ttf TW-M/Fonts/ARKai_T.ttf TW-M/Fonts/ARHei.ttf \
-                 TW-M/Fonts/bKAI00M.ttf TW-M/Fonts/bHEI00M.ttf TW-M/Fonts/bHEI01B.ttf TW-M/Fonts/blei00d.ttf \
+                 TW-M/Fonts/arheiuhk_bd.ttf TW-M/Fonts/bKAI00M.ttf TW-M/Fonts/bHEI00M.ttf TW-M/Fonts/bHEI01B.ttf TW-M/Fonts/blei00d.ttf \
                  TW-M/Fonts/2002.ttf TW-M/Fonts/2002B.ttf TW-M/Fonts/K_Damage.ttf TW-M/Fonts/K_Pagetext.ttf
 	cd TW-M ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -6441,6 +6480,9 @@ TW-M/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CN-Medium.ttf
 	mkdir -p TW-M/Fonts
 	cp $^ $@
 
+TW-M/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-TW-Medium.ttf
+	mkdir -p TW-M/Fonts
+	cp $^ $@
 TW-M/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-TW-Medium.ttf
 	mkdir -p TW-M/Fonts
 	cp $^ $@
@@ -6470,7 +6512,7 @@ TW-M/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Medium.ttf
 NowarRounded-HK-M-${VERSION}.7z: HK-M/Fonts/MORPHEUS.ttf HK-M/Fonts/FRIZQT__.ttf HK-M/Fonts/ARIALN.ttf HK-M/Fonts/skurri.ttf \
                  HK-M/Fonts/MORPHEUS_CYR.ttf HK-M/Fonts/FRIZQT___CYR.ttf HK-M/Fonts/SKURRI_CYR.ttf \
                  HK-M/Fonts/ARKai_C.ttf HK-M/Fonts/ARKai_T.ttf HK-M/Fonts/ARHei.ttf \
-                 HK-M/Fonts/bKAI00M.ttf HK-M/Fonts/bHEI00M.ttf HK-M/Fonts/bHEI01B.ttf HK-M/Fonts/blei00d.ttf \
+                 HK-M/Fonts/arheiuhk_bd.ttf HK-M/Fonts/bKAI00M.ttf HK-M/Fonts/bHEI00M.ttf HK-M/Fonts/bHEI01B.ttf HK-M/Fonts/blei00d.ttf \
                  HK-M/Fonts/2002.ttf HK-M/Fonts/2002B.ttf HK-M/Fonts/K_Damage.ttf HK-M/Fonts/K_Pagetext.ttf
 	cd HK-M ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -6508,6 +6550,9 @@ HK-M/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CN-Medium.ttf
 	mkdir -p HK-M/Fonts
 	cp $^ $@
 
+HK-M/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-HK-Medium.ttf
+	mkdir -p HK-M/Fonts
+	cp $^ $@
 HK-M/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-HK-Medium.ttf
 	mkdir -p HK-M/Fonts
 	cp $^ $@
@@ -6537,7 +6582,7 @@ HK-M/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Medium.ttf
 NowarRounded-JP-M-${VERSION}.7z: JP-M/Fonts/MORPHEUS.ttf JP-M/Fonts/FRIZQT__.ttf JP-M/Fonts/ARIALN.ttf JP-M/Fonts/skurri.ttf \
                  JP-M/Fonts/MORPHEUS_CYR.ttf JP-M/Fonts/FRIZQT___CYR.ttf JP-M/Fonts/SKURRI_CYR.ttf \
                  JP-M/Fonts/ARKai_C.ttf JP-M/Fonts/ARKai_T.ttf JP-M/Fonts/ARHei.ttf \
-                 JP-M/Fonts/bKAI00M.ttf JP-M/Fonts/bHEI00M.ttf JP-M/Fonts/bHEI01B.ttf JP-M/Fonts/blei00d.ttf \
+                 JP-M/Fonts/arheiuhk_bd.ttf JP-M/Fonts/bKAI00M.ttf JP-M/Fonts/bHEI00M.ttf JP-M/Fonts/bHEI01B.ttf JP-M/Fonts/blei00d.ttf \
                  JP-M/Fonts/2002.ttf JP-M/Fonts/2002B.ttf JP-M/Fonts/K_Damage.ttf JP-M/Fonts/K_Pagetext.ttf
 	cd JP-M ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -6575,6 +6620,9 @@ JP-M/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CN-Medium.ttf
 	mkdir -p JP-M/Fonts
 	cp $^ $@
 
+JP-M/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-TW-Medium.ttf
+	mkdir -p JP-M/Fonts
+	cp $^ $@
 JP-M/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-TW-Medium.ttf
 	mkdir -p JP-M/Fonts
 	cp $^ $@
@@ -6604,7 +6652,7 @@ JP-M/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Medium.ttf
 NowarRounded-CL-M-${VERSION}.7z: CL-M/Fonts/MORPHEUS.ttf CL-M/Fonts/FRIZQT__.ttf CL-M/Fonts/ARIALN.ttf CL-M/Fonts/skurri.ttf \
                  CL-M/Fonts/MORPHEUS_CYR.ttf CL-M/Fonts/FRIZQT___CYR.ttf CL-M/Fonts/SKURRI_CYR.ttf \
                  CL-M/Fonts/ARKai_C.ttf CL-M/Fonts/ARKai_T.ttf CL-M/Fonts/ARHei.ttf \
-                 CL-M/Fonts/bKAI00M.ttf CL-M/Fonts/bHEI00M.ttf CL-M/Fonts/bHEI01B.ttf CL-M/Fonts/blei00d.ttf \
+                 CL-M/Fonts/arheiuhk_bd.ttf CL-M/Fonts/bKAI00M.ttf CL-M/Fonts/bHEI00M.ttf CL-M/Fonts/bHEI01B.ttf CL-M/Fonts/blei00d.ttf \
                  CL-M/Fonts/2002.ttf CL-M/Fonts/2002B.ttf CL-M/Fonts/K_Damage.ttf CL-M/Fonts/K_Pagetext.ttf
 	cd CL-M ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -6642,6 +6690,9 @@ CL-M/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CL-Medium.ttf
 	mkdir -p CL-M/Fonts
 	cp $^ $@
 
+CL-M/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-CL-Medium.ttf
+	mkdir -p CL-M/Fonts
+	cp $^ $@
 CL-M/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-CL-Medium.ttf
 	mkdir -p CL-M/Fonts
 	cp $^ $@
@@ -6671,7 +6722,7 @@ CL-M/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Medium.ttf
 NowarRounded-OSF-M-${VERSION}.7z: OSF-M/Fonts/MORPHEUS.ttf OSF-M/Fonts/FRIZQT__.ttf OSF-M/Fonts/ARIALN.ttf OSF-M/Fonts/skurri.ttf \
                  OSF-M/Fonts/MORPHEUS_CYR.ttf OSF-M/Fonts/FRIZQT___CYR.ttf OSF-M/Fonts/SKURRI_CYR.ttf \
                  OSF-M/Fonts/ARKai_C.ttf OSF-M/Fonts/ARKai_T.ttf OSF-M/Fonts/ARHei.ttf \
-                 OSF-M/Fonts/bKAI00M.ttf OSF-M/Fonts/bHEI00M.ttf OSF-M/Fonts/bHEI01B.ttf OSF-M/Fonts/blei00d.ttf \
+                 OSF-M/Fonts/arheiuhk_bd.ttf OSF-M/Fonts/bKAI00M.ttf OSF-M/Fonts/bHEI00M.ttf OSF-M/Fonts/bHEI01B.ttf OSF-M/Fonts/blei00d.ttf \
                  OSF-M/Fonts/2002.ttf OSF-M/Fonts/2002B.ttf OSF-M/Fonts/K_Damage.ttf OSF-M/Fonts/K_Pagetext.ttf
 	cd OSF-M ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -6709,6 +6760,9 @@ OSF-M/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CL-Medium.ttf
 	mkdir -p OSF-M/Fonts
 	cp $^ $@
 
+OSF-M/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-CL-Medium.ttf
+	mkdir -p OSF-M/Fonts
+	cp $^ $@
 OSF-M/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-CL-Medium.ttf
 	mkdir -p OSF-M/Fonts
 	cp $^ $@
@@ -6738,7 +6792,7 @@ OSF-M/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Medium.ttf
 NowarRounded-CN-B-${VERSION}.7z: CN-B/Fonts/MORPHEUS.ttf CN-B/Fonts/FRIZQT__.ttf CN-B/Fonts/ARIALN.ttf CN-B/Fonts/skurri.ttf \
                  CN-B/Fonts/MORPHEUS_CYR.ttf CN-B/Fonts/FRIZQT___CYR.ttf CN-B/Fonts/SKURRI_CYR.ttf \
                  CN-B/Fonts/ARKai_C.ttf CN-B/Fonts/ARKai_T.ttf CN-B/Fonts/ARHei.ttf \
-                 CN-B/Fonts/bKAI00M.ttf CN-B/Fonts/bHEI00M.ttf CN-B/Fonts/bHEI01B.ttf CN-B/Fonts/blei00d.ttf \
+                 CN-B/Fonts/arheiuhk_bd.ttf CN-B/Fonts/bKAI00M.ttf CN-B/Fonts/bHEI00M.ttf CN-B/Fonts/bHEI01B.ttf CN-B/Fonts/blei00d.ttf \
                  CN-B/Fonts/2002.ttf CN-B/Fonts/2002B.ttf CN-B/Fonts/K_Damage.ttf CN-B/Fonts/K_Pagetext.ttf
 	cd CN-B ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -6776,6 +6830,9 @@ CN-B/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CN-Bold.ttf
 	mkdir -p CN-B/Fonts
 	cp $^ $@
 
+CN-B/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-TW-Bold.ttf
+	mkdir -p CN-B/Fonts
+	cp $^ $@
 CN-B/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-TW-Bold.ttf
 	mkdir -p CN-B/Fonts
 	cp $^ $@
@@ -6805,7 +6862,7 @@ CN-B/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Bold.ttf
 NowarRounded-TW-B-${VERSION}.7z: TW-B/Fonts/MORPHEUS.ttf TW-B/Fonts/FRIZQT__.ttf TW-B/Fonts/ARIALN.ttf TW-B/Fonts/skurri.ttf \
                  TW-B/Fonts/MORPHEUS_CYR.ttf TW-B/Fonts/FRIZQT___CYR.ttf TW-B/Fonts/SKURRI_CYR.ttf \
                  TW-B/Fonts/ARKai_C.ttf TW-B/Fonts/ARKai_T.ttf TW-B/Fonts/ARHei.ttf \
-                 TW-B/Fonts/bKAI00M.ttf TW-B/Fonts/bHEI00M.ttf TW-B/Fonts/bHEI01B.ttf TW-B/Fonts/blei00d.ttf \
+                 TW-B/Fonts/arheiuhk_bd.ttf TW-B/Fonts/bKAI00M.ttf TW-B/Fonts/bHEI00M.ttf TW-B/Fonts/bHEI01B.ttf TW-B/Fonts/blei00d.ttf \
                  TW-B/Fonts/2002.ttf TW-B/Fonts/2002B.ttf TW-B/Fonts/K_Damage.ttf TW-B/Fonts/K_Pagetext.ttf
 	cd TW-B ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -6843,6 +6900,9 @@ TW-B/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CN-Bold.ttf
 	mkdir -p TW-B/Fonts
 	cp $^ $@
 
+TW-B/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-TW-Bold.ttf
+	mkdir -p TW-B/Fonts
+	cp $^ $@
 TW-B/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-TW-Bold.ttf
 	mkdir -p TW-B/Fonts
 	cp $^ $@
@@ -6872,7 +6932,7 @@ TW-B/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Bold.ttf
 NowarRounded-HK-B-${VERSION}.7z: HK-B/Fonts/MORPHEUS.ttf HK-B/Fonts/FRIZQT__.ttf HK-B/Fonts/ARIALN.ttf HK-B/Fonts/skurri.ttf \
                  HK-B/Fonts/MORPHEUS_CYR.ttf HK-B/Fonts/FRIZQT___CYR.ttf HK-B/Fonts/SKURRI_CYR.ttf \
                  HK-B/Fonts/ARKai_C.ttf HK-B/Fonts/ARKai_T.ttf HK-B/Fonts/ARHei.ttf \
-                 HK-B/Fonts/bKAI00M.ttf HK-B/Fonts/bHEI00M.ttf HK-B/Fonts/bHEI01B.ttf HK-B/Fonts/blei00d.ttf \
+                 HK-B/Fonts/arheiuhk_bd.ttf HK-B/Fonts/bKAI00M.ttf HK-B/Fonts/bHEI00M.ttf HK-B/Fonts/bHEI01B.ttf HK-B/Fonts/blei00d.ttf \
                  HK-B/Fonts/2002.ttf HK-B/Fonts/2002B.ttf HK-B/Fonts/K_Damage.ttf HK-B/Fonts/K_Pagetext.ttf
 	cd HK-B ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -6910,6 +6970,9 @@ HK-B/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CN-Bold.ttf
 	mkdir -p HK-B/Fonts
 	cp $^ $@
 
+HK-B/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-HK-Bold.ttf
+	mkdir -p HK-B/Fonts
+	cp $^ $@
 HK-B/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-HK-Bold.ttf
 	mkdir -p HK-B/Fonts
 	cp $^ $@
@@ -6939,7 +7002,7 @@ HK-B/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Bold.ttf
 NowarRounded-JP-B-${VERSION}.7z: JP-B/Fonts/MORPHEUS.ttf JP-B/Fonts/FRIZQT__.ttf JP-B/Fonts/ARIALN.ttf JP-B/Fonts/skurri.ttf \
                  JP-B/Fonts/MORPHEUS_CYR.ttf JP-B/Fonts/FRIZQT___CYR.ttf JP-B/Fonts/SKURRI_CYR.ttf \
                  JP-B/Fonts/ARKai_C.ttf JP-B/Fonts/ARKai_T.ttf JP-B/Fonts/ARHei.ttf \
-                 JP-B/Fonts/bKAI00M.ttf JP-B/Fonts/bHEI00M.ttf JP-B/Fonts/bHEI01B.ttf JP-B/Fonts/blei00d.ttf \
+                 JP-B/Fonts/arheiuhk_bd.ttf JP-B/Fonts/bKAI00M.ttf JP-B/Fonts/bHEI00M.ttf JP-B/Fonts/bHEI01B.ttf JP-B/Fonts/blei00d.ttf \
                  JP-B/Fonts/2002.ttf JP-B/Fonts/2002B.ttf JP-B/Fonts/K_Damage.ttf JP-B/Fonts/K_Pagetext.ttf
 	cd JP-B ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -6977,6 +7040,9 @@ JP-B/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CN-Bold.ttf
 	mkdir -p JP-B/Fonts
 	cp $^ $@
 
+JP-B/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-TW-Bold.ttf
+	mkdir -p JP-B/Fonts
+	cp $^ $@
 JP-B/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-TW-Bold.ttf
 	mkdir -p JP-B/Fonts
 	cp $^ $@
@@ -7006,7 +7072,7 @@ JP-B/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Bold.ttf
 NowarRounded-CL-B-${VERSION}.7z: CL-B/Fonts/MORPHEUS.ttf CL-B/Fonts/FRIZQT__.ttf CL-B/Fonts/ARIALN.ttf CL-B/Fonts/skurri.ttf \
                  CL-B/Fonts/MORPHEUS_CYR.ttf CL-B/Fonts/FRIZQT___CYR.ttf CL-B/Fonts/SKURRI_CYR.ttf \
                  CL-B/Fonts/ARKai_C.ttf CL-B/Fonts/ARKai_T.ttf CL-B/Fonts/ARHei.ttf \
-                 CL-B/Fonts/bKAI00M.ttf CL-B/Fonts/bHEI00M.ttf CL-B/Fonts/bHEI01B.ttf CL-B/Fonts/blei00d.ttf \
+                 CL-B/Fonts/arheiuhk_bd.ttf CL-B/Fonts/bKAI00M.ttf CL-B/Fonts/bHEI00M.ttf CL-B/Fonts/bHEI01B.ttf CL-B/Fonts/blei00d.ttf \
                  CL-B/Fonts/2002.ttf CL-B/Fonts/2002B.ttf CL-B/Fonts/K_Damage.ttf CL-B/Fonts/K_Pagetext.ttf
 	cd CL-B ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -7044,6 +7110,9 @@ CL-B/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CL-Bold.ttf
 	mkdir -p CL-B/Fonts
 	cp $^ $@
 
+CL-B/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-CL-Bold.ttf
+	mkdir -p CL-B/Fonts
+	cp $^ $@
 CL-B/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-CL-Bold.ttf
 	mkdir -p CL-B/Fonts
 	cp $^ $@
@@ -7073,7 +7142,7 @@ CL-B/Fonts/K_Pagetext.ttf: nowar/korean-NowarCompactRounded-CL-Bold.ttf
 NowarRounded-OSF-B-${VERSION}.7z: OSF-B/Fonts/MORPHEUS.ttf OSF-B/Fonts/FRIZQT__.ttf OSF-B/Fonts/ARIALN.ttf OSF-B/Fonts/skurri.ttf \
                  OSF-B/Fonts/MORPHEUS_CYR.ttf OSF-B/Fonts/FRIZQT___CYR.ttf OSF-B/Fonts/SKURRI_CYR.ttf \
                  OSF-B/Fonts/ARKai_C.ttf OSF-B/Fonts/ARKai_T.ttf OSF-B/Fonts/ARHei.ttf \
-                 OSF-B/Fonts/bKAI00M.ttf OSF-B/Fonts/bHEI00M.ttf OSF-B/Fonts/bHEI01B.ttf OSF-B/Fonts/blei00d.ttf \
+                 OSF-B/Fonts/arheiuhk_bd.ttf OSF-B/Fonts/bKAI00M.ttf OSF-B/Fonts/bHEI00M.ttf OSF-B/Fonts/bHEI01B.ttf OSF-B/Fonts/blei00d.ttf \
                  OSF-B/Fonts/2002.ttf OSF-B/Fonts/2002B.ttf OSF-B/Fonts/K_Damage.ttf OSF-B/Fonts/K_Pagetext.ttf
 	cd OSF-B ; \
 	cp ../LICENSE.txt Fonts/LICENSE.txt ; \
@@ -7111,6 +7180,9 @@ OSF-B/Fonts/ARHei.ttf: nowar/gbk-NowarCompactRounded-CL-Bold.ttf
 	mkdir -p OSF-B/Fonts
 	cp $^ $@
 
+OSF-B/Fonts/arheiuhk_bd.ttf: nowar/big5-NowarCompactRounded-CL-Bold.ttf
+	mkdir -p OSF-B/Fonts
+	cp $^ $@
 OSF-B/Fonts/bKAI00M.ttf: nowar/big5-NowarWideRounded-CL-Bold.ttf
 	mkdir -p OSF-B/Fonts
 	cp $^ $@
