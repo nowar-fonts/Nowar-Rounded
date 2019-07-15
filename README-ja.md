@@ -6,11 +6,16 @@ Alternative language: [Hànyǔ Pīnyīn](README-Pinyin.md)
 
 有愛丸ゴシック、はワールド・オブ・ウォークラフトと WoW クラシックの書体パックです。
 
+![Preview](preview.png)
+
+## 名前：<ruby>有愛<rt>うあい</rt></ruby><ruby>丸<rt>まる</rt></ruby>ゴシック
+
 > Make Love, Not Warcraft.<br>
 > 要有爱，不要魔兽争霸。<br>
 > 要愛，不要魔獸。
 
-![Preview](preview.png)
+* The name in 漢字, 有愛, is a (not so common) Chinese word, and should be considered as 音読字.
+* We prefer 呉音 (うあい) officially rather than 漢音 (ゆうあい) to avoid confusion with 字游工房’s 游書体.
 
 ## ダウンロード
 
