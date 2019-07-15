@@ -1,4 +1,6 @@
-[English](README.md) **简体中文** [繁體中文](README-Hant.md) [Hànyǔ Pīnyīn](README-Pinyin.md)
+Languages: [English](README.md) **简体中文** [繁體中文](README-Hant.md) [日本語（部分翻訳）](README-ja.md)
+<br>
+Alternative language: [Hànyǔ Pīnyīn](README-Pinyin.md)
 
 # 有爱圆体
 

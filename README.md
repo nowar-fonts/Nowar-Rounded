@@ -1,4 +1,6 @@
-**English** [简体中文](README-Hans.md) [繁體中文](README-Hant.md) [Hànyǔ Pīnyīn](README-Pinyin.md)
+Languages: **English** [简体中文](README-Hans.md) [繁體中文](README-Hant.md) [日本語（部分翻訳）](README-ja.md)
+<br>
+Alternative language: [Hànyǔ Pīnyīn](README-Pinyin.md)
 
 # Nowar Rounded
 
@@ -26,7 +28,7 @@ Nowar Rounded is provided in 4 weights and 6 regional variants.
 
 ### Regional Variants
 
-The shape of Chinese characters follows different standards in different regional variants.
+Orthographies of Chinese characters for each variant and client language are listed below.
 
 |     | European                      | 简体中文       | 繁體中文  | 한국어  |
 | --- | ----------------------------- | -------------- | --------- | ------- |

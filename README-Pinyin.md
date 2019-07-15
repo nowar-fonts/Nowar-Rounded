@@ -1,4 +1,6 @@
-[English](README.md) [简体中文](README-Hans.md) [繁體中文](README-Hant.md) **Hànyǔ Pīnyīn**
+Languages: [English](README.md) [简体中文](README-Hans.md) [繁體中文](README-Hant.md) [日本語（部分翻訳）](README-ja.md)
+<br>
+Alternative Language: **Hànyǔ Pīnyīn**
 
 *Zhùshì: zhè shì yī piān cèshì Kuòzhǎn Lādīng Zìfú de wéndàng.*
 
