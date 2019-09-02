@@ -14,7 +14,9 @@ This is Nowar Rounded, font packs for _World of Warcraft_ that support all langu
 
 ## Download the Fonts
 
-[Latest release](https://github.com/CyanoHao/Nowar-Rounded/releases)
+[Latest release at GitHub](https://github.com/nowar-fonts/Nowar-Rounded/releases)
+
+Mirrors: [Latest release at Gitee](https://gitee.com/nowar-fonts/Nowar-Rounded/releases)
 
 Nowar Rounded is provided in 4 weights and 6 regional variants.
 

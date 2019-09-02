@@ -16,7 +16,9 @@ Yǒu’ài Yuánjiǎo Zìtǐ shì «Móshòu Shìjiè» zìtǐbāo
 
 ## Xiàzài zhǐnán
 
-[Zuìxīn de bǎnběn](https://github.com/CyanoHao/Nowar-Rounded/releases)
+[Zuìxīn de bǎnběn (GitHub)](https://github.com/nowar-fonts/Nowar-Rounded/releases)
+
+Jìngxiàng: [Zuìxīn de bǎnběn (Gitee)](https://gitee.com/nowar-fonts/Nowar-Rounded/releases)
 
 Yǒu’ài Yuánjiǎo Zìtǐ yǒu 4 zhǒng zìtǐ cūxì hé 6 zhǒng dìqū biànhuà de zìtǐ xíngtài.
 

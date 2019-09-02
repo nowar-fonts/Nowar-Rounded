@@ -14,7 +14,9 @@ Alternative language: [Hànyǔ Pīnyīn](README-Pinyin.md)
 
 ## 下载指南
 
-[最新版](https://github.com/CyanoHao/Nowar-Rounded/releases)
+[GitHub 上的最新版](https://github.com/nowar-fonts/Nowar-Rounded/releases)
+
+镜像：[Gitee 上的最新版](https://gitee.com/nowar-fonts/Nowar-Rounded/releases)
 
 有爱圆体有 4 种字重和 6 种地区变体。
 

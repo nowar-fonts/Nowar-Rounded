@@ -19,7 +19,9 @@ Alternative language: [Hànyǔ Pīnyīn](README-Pinyin.md)
 
 ## ダウンロード
 
-[最新のリリース](https://github.com/CyanoHao/Nowar-Rounded/releases)
+[GitHub で最新のリリース](https://github.com/nowar-fonts/Nowar-Rounded/releases)
+
+ミラー：[Gitee で最新のリリース](https://gitee.com/nowar-fonts/Nowar-Rounded/releases)
 
 Nowar Rounded is provided in 4 weights and 6 regional variants.
 
