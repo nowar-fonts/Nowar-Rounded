@@ -1,63 +1,146 @@
-Languages: **English** [简体中文](README-Hans.md) [繁體中文](README-Hant.md) [日本語（部分翻訳）](README-ja.md)
-<br>
-Alternative language: [Hànyǔ Pīnyīn](README-Pinyin.md)
+**English** [简体中文](README-Hans.md) [繁體中文](README-Hant.md)
 
 # Nowar Rounded
 
-This is Nowar Rounded, font packs for _World of Warcraft_ that support all languages. Nowar Rounded is based on Noto Rounded and [Resource Han Rounded](https://github.com/CyanoHao/Resource-Han-Rounded).
+This is Nowar Rounded, font packs for _World of Warcraft_ and _WoW Classic_ that support all client languages. Nowar Rounded is based on [Noto Sans](https://github.com/googlei18n/noto-fonts) and [Resource Han Rounded](https://github.com/CyanoHao/Resource-Han-Rounded).
 
 > Make Love, Not Warcraft.<br>
 > 要有爱，不要魔兽争霸。<br>
 > 要愛，不要魔獸。
 
-![Preview](preview.png)
+![Nowar Rounded](poster/heading.png)
+
+![Multilingual support](poster/multilingual.png)
 
 ## Download the Fonts
 
 [Latest release at GitHub](https://github.com/nowar-fonts/Nowar-Rounded/releases)
 
-Mirrors: [Latest release at Gitee](https://gitee.com/nowar-fonts/Nowar-Rounded/releases)
+Mirrors: [Gitee (release repo)](https://gitee.com/nowar-fonts/Nowar-Rounded)
 
-Nowar Rounded is provided in 4 weights and 6 regional variants.
-
-### Weights
-
-* L: Light
-* R: Regular
-* M: Medium
-* B: Bold
-* [Morpheus (Western title font) may be bolder or lighter.]
+Nowar Rounded is shipped in 4 weights and 5 regional variants, with several features.
 
 ### Regional Variants
 
-Orthographies of Chinese characters for each variant and client language are listed below.
+Bliz and Neut are “standard variants” with regional Chinese character orthographies.
 
-|     | European                      | 简体中文       | 繁體中文  | 한국어  |
-| --- | ----------------------------- | -------------- | --------- | ------- |
-| CN  | Mainland China (UI)           | Mainland China | Taiwan    | Classic |
-| TW  | Taiwan (UI)                   | Mainland China | Taiwan    | Classic |
-| HK  | Hong Kong (UI)                | Mainland China | Hong Kong | Classic |
-| JP  | Japan (UI)                    | Mainland China | Taiwan    | Classic |
-| CL  | Classic (UI)                  | Classic        | Classic   | Classic |
-| OSF | Classic (UI, Oldstyle Figure) | Classic        | Classic   | Classic |
+|      | European and 한국어 | 简体中文       | 繁體中文 | Note                                       |
+| ---- | ------------------- | -------------- | -------- | ------------------------------------------ |
+| Bliz | Mainland China (UI) | Mainland China | Taiwan   | Acts like WoW’s default fallback setting.  |
+| Neut | Classical (UI)      | Mainland China | Taiwan   | Prefers classical orthography on fallback. |
+
+CL is the “classical variant” with classical Chinese character orthography (aka Kāngxī Dictionary forms).
+
+|    | European and 한국어 | 中文      |
+| -- | ------------------- | --------- |
+| CL | Classical (UI)      | Classical |
+
+PSimp and PSimpChat are special variants for 繁體中文 that remap traditional Chinese character to simplified ones.
+
+| | Common Fonts | 繁體中文 Text, Combat and Tooltip Fonts | 繁體中文 Chat Fonts | European, 简体中文 and 한국어 |
+| --------- | ----------------------------- | ------------------------- | ------------------------- | --- |
+| PSimp     | Mainland China (UI, Remapped) | Mainland China (Remapped) | Mainland China            | N/A |
+| PSimpChat | Mainland China (UI, Remapped) | Mainland China (Remapped) | Mainland China (Remapped) | N/A |
 
 * European: English, Español (AL), Português, Deutsch, Español (EU), Français, Italiano, and Русский.
-* UI: Ambiguous punctations are treated as Western; CJK puctations are half-width; Kana are proportional.
+* UI: Ambiguous punctations are treated as Western; CJK puctations are half-width.
+* Common fonts: `FRIZQT__` and `ARIALN`, which are hard-coded in some addons.
 
-### SharedMedia Font Provider
+### Features
 
-Nowar Rounded is also avialable as an addon (REALLY HUGE!), to register Nowar Rounded typeface to SharedMedia.
+| Tag | Name        | Description                                                            |
+| --- | ----------- | ---------------------------------------------------------------------- |
+| OSF | Oldstyle    | Oldstyle (non-lining), propotional figure.                             |
+| RP  | Roleplaying | `丶` (U+4E36) is mapped to the same glyph as `·` (U+00B7, MIDDLE DOT). |
+| SC  | Smallcaps   | Small capitals for Latin.                                              |
+
+Pre-built feature variants: `Bliz,OSF`, `Bliz,RP`, `Bliz,SC`.
 
 ## How to Build
 
-Dependencies: Python and [otfcc](https://github.com/caryll/otfcc).
+### Dependencies
 
-Put Resource Han Rounded TTF files to `rhr/`, and Noto Sans TTF files to `noto/sans/`, then just `make` it.
++ basic Unix utils,
++ [Python](https://www.python.org/),
++ [otfcc](https://github.com/caryll/otfcc) and
++ [7-Zip](https://www.7-zip.org/) (add to `PATH`).
+
+Note:
++ Choose 64-bit version if possible. 32-bit version may lead to out-of-memory issue.
+
+### Build Feature Variant
+
+Prepare submodules:
+```bash
+git submodule update --init --recursive
+```
+
+Run `configure.py` to generate Makefile:
+```bash
+python configure.py
+```
+
+Put Resource Han Rounded TTF files to `source/rhr/`.
+
+Then make a specific variant:
+```bash
+make <region>,<features>-<weight> -j<threads>
+```
+Note: Features must be sorted alphabetically. (`OSF`, `RP`, `SC`).
+
+e.g.
+```bash
+make CN,OSF,RP-400 -j4
+```
+
+The output is `out/NowarSans-<region>,<features>-<weight>-<version>.7z`.
+
+### Create Regional Variant
+
+To build exactly what you need, modify `configure.py`:
+```python
+class Config:
+    # put your variant here
+    fontPackRegion = [ <your_region> ]
+
+# define the variant here.
+regionalVariant = { ... }
+```
+
+For example, the “CNmulti” multi-orthography variant,
+
+|         | European            | 简体中文       | 繁體中文 | 한국어        |
+| ------- | ------------------- | -------------- | -------- | ------------- |
+| CNmulti | Mainland China (UI) | Mainland China | Taiwan   | S. Korea (UI) |
+
+```python
+class Config:
+    fontPackRegion = [ "CNmulti" ]
+
+regionalVariant = {
+    "CNmulti": {
+        "base": "CN",
+        "enUS": True,
+        "ruRU": True,
+        "zhCN": "CN",
+        "zhTW": "TW",
+        "koKR": "KR",
+    }
+}
+```
+
+Then, run `python configure.py` to generate `Makefile`. The new regional variant (with optional feature) can be built by:
+```bash
+make <region>,<features>-<weight> -j<threads>
+```
+e.g.
+```bash
+make CNmulti-400 -j4
+make CNmulti,OSF-400 -j4
+```
 
 ## Credit
 
-Latin, Greek and Cyrillic characters are from Noto Round, which is a part of Nowar Rounded project. Noto Rounded is derived from [Noto Sans](https://github.com/googlei18n/noto-fonts) by Google.
-
-Emoji (<ruby>絵文字<rt>えもじ</rt></ruby>) are from [Noto Emoji](https://github.com/googlei18n/noto-emoji) by Google.
+Latin, Greek and Cyrillic characters are from [Noto Sans](https://github.com/googlei18n/noto-fonts) by Google.
 
 CJK Ideographs, Kana and Hangul are from [Resource Han Rounded](https://github.com/CyanoHao/Resource-Han-Rounded), which is derived from [Source Han Sans](https://github.com/adobe-fonts/source-han-sans) by Adobe.

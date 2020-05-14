@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Nowar Rounded Poster</title>
+
+	<style>
+		@font-face {
+			font-family: "Nowar Rounded CN";
+			font-weight: normal;
+			src: url("../build/nowar/unspec-NowarRounded-CN-Regular.ttf") format("opentype");
+		}
+		@font-face {
+			font-family: "Nowar Rounded CN";
+			font-weight: bold;
+			src: url("../build/nowar/unspec-NowarRounded-CN-Bold.ttf") format("opentype");
+		}
+		@font-face {
+			font-family: "Nowar Rounded TW";
+			font-weight: normal;
+			src: url("../build/nowar/unspec-NowarRounded-TW-Regular.ttf") format("opentype");
+		}
+		@font-face {
+			font-family: "Nowar Rounded TW";
+			font-weight: bold;
+			src: url("../build/nowar/unspec-NowarRounded-TW-Bold.ttf") format("opentype");
+		}
+		@font-face {
+			font-family: "Nowar Rounded JP";
+			font-weight: normal;
+			src: url("../build/nowar/unspec-NowarRounded-JP-Regular.ttf") format("opentype");
+		}
+		@font-face {
+			font-family: "Nowar Rounded JP";
+			font-weight: bold;
+			src: url("../build/nowar/unspec-NowarRounded-JP-Bold.ttf") format("opentype");
+		}
+		@font-face {
+			font-family: "Nowar Rounded CL";
+			font-weight: normal;
+			src: url("../build/nowar/unspec-NowarRounded-CL-Regular.ttf") format("opentype");
+		}
+		@font-face {
+			font-family: "Nowar Rounded CL";
+			font-weight: bold;
+			src: url("../build/nowar/unspec-NowarRounded-CL-Bold.ttf") format("opentype");
+		}
+		@font-face {
+			font-family: "Nowar Rounded CL UI";
+			font-weight: normal;
+			src: url("../build/nowar/unspec-NowarRounded-CL,UI-Regular.ttf") format("opentype");
+		}
+		@font-face {
+			font-family: "Nowar Rounded CL UI";
+			font-weight: bold;
+			src: url("../build/nowar/unspec-NowarRounded-CL,UI-Bold.ttf") format("opentype");
+		}
+
+		body {
+			font-family: 'Nowar Rounded CL UI', sans-serif;
+			font-size: 16px;
+			width: 1000px;
+		}
+		body :lang(zh-CN) {
+			font-family: 'Nowar Rounded CN', sans-serif;
+		}
+		body :lang(zh-TW) {
+			font-family: 'Nowar Rounded TW', sans-serif;
+		}
+		body :lang(lzh) {
+			font-family: 'Nowar Rounded CL', sans-serif;
+		}
+		body :lang(ja) {
+			font-family: 'Nowar Rounded JP', sans-serif;
+		}
+		body :lang(ko) {
+			font-family: 'Nowar Rounded CL UI', sans-serif;
+		}
+
+		div.heading {
+			font-size: 4rem;
+			font-weight: bold;
+		}
+		div.heading .h1 {
+			color: #333;
+			font-size: 6rem;
+			text-align: center;
+		}
+
+		div.heading ul {
+			list-style: none;
+			margin: 0;
+			padding-left: 0;
+		}
+		div.heading ul.flex-list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-content: space-around;
+		}
+		div.heading ul.flex-list li {
+			background-color: #606060;
+			flex-grow: 1;
+			min-width: 400px;
+			height: 1.5em;
+			margin: 1px;
+			text-align: center;
+		}
+
+		div.heading span.vcenter-box {
+			display: inline-table;
+			width: 100%;
+			height: 100%;
+			color: #fff;
+			text-decoration: none;
+		}
+		div.heading span.vcenter-box span.vcenter-wrap {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		div.multilingual {
+			font-size: 1rem;
+			font-weight: normal;
+		}
+		div.multilingual .h2 {
+			color: #333;
+			font-size: 3rem;
+			font-weight: bold;
+			text-align: center;
+			padding: 0.2em 0;
+		}
+
+		div.multilingual ul {
+			list-style: none;
+			margin: 0;
+			padding-left: 0;
+		}
+		div.multilingual ul.flex-list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-content: space-around;
+		}
+		div.multilingual ul.flex-list li {
+			background-color: #ddd;
+			flex-grow: 1;
+			min-width: 300px;
+			height: 3em;
+			margin: 1px;
+			text-align: center;
+		}
+
+		div.multilingual span.vcenter-box {
+			display: inline-table;
+			width: 100%;
+			height: 100%;
+			color: black;
+			text-decoration: none;
+		}
+		div.multilingual span.vcenter-box span.vcenter-wrap {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	</style>
+</head>
+
+<body>
+		<div class="heading">
+			<div class="h1">Nowar Rounded</div>
+			<ul class="flex-list">
+				<li><span class="vcenter-box"><span class="vcenter-wrap" lang="zh-CN">有爱圆体</span></span></li>
+				<li><span class="vcenter-box"><span class="vcenter-wrap" lang="zh-TW">有愛圓體</span></span></li>
+				<li><span class="vcenter-box"><span class="vcenter-wrap" lang="ja">有愛丸ゴシック</span></span></li>
+				<li><span class="vcenter-box"><span class="vcenter-wrap" lang="ko">有愛 굴림</span></span></li>
+			</ul>
+		</div>
+
+		<div class="multilingual">
+			<div class="h2">Multilingual Support</div>
+			<ul class="flex-list">
+				<li><span class="vcenter-box"><span class="vcenter-wrap">English<br>I can eat glass and it doesn’t hurt me.</span></span></li>
+				<li><span class="vcenter-box"><span class="vcenter-wrap">English (IPA)<br>/aɪ kæn iːt glɑːs ænd ɪt dɐz nɒt hɜːt miː/</span></span></li>
+				<li><span class="vcenter-box"><span class="vcenter-wrap">Español<br>Puedo comer vidrio, no me hace daño.</span></span></li>
+				<li><span class="vcenter-box"><span class="vcenter-wrap">Português (Brasil)<br>Posso comer vidro, não me machuca.</span></span></li>
+				<li><span class="vcenter-box"><span class="vcenter-wrap">Français<br>Je peux manger du verre, ça ne me fait pas mal.</span></span></li>
+				<li><span class="vcenter-box"><span class="vcenter-wrap">Deutsch<br>Ich kann Glas essen, ohne mir zu schaden.</span></span></li>
+				<li><span class="vcenter-box"><span class="vcenter-wrap">Italiano<br>Posso mangiare il vetro e non mi fa male.</span></span></li>
+				<li><span class="vcenter-box"><span class="vcenter-wrap">Русский<br>Я могу есть стекло, оно мне не вредит.</span></span></li>
+
+				<li style="break-before: always;"><span class="vcenter-box"><span class="vcenter-wrap" lang="zh-CN">汉语（简体中文）<br>我能吞下玻璃而不伤身体。</span></span></li>
+				<li><span class="vcenter-box"><span class="vcenter-wrap" lang="zh-TW">漢語（繁體中文）<br>我能吞下玻璃而不傷身體。</span></span></li>
+				<li><span class="vcenter-box"><span class="vcenter-wrap" lang="lzh">漢語（傳統字形）<br>我能吞下玻璃而不傷身體。</span></span></li>
+				<li><span class="vcenter-box"><span class="vcenter-wrap" lang="ja">日本語<br>私はガラスを食べられます。それは私を傷つけません。</span></span></li>
+				<li><span class="vcenter-box"><span class="vcenter-wrap" lang="ko">한국어<br>나는 유리를 먹을 수 있어요. 그래도 아프지 않아요.</span></span></li>
+			</ul>
+		</div>
+	</ul>
+</body>
+
+</html>

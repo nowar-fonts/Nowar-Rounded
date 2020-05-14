@@ -1,7 +1,5 @@
-*.otd
-*.ttf
-*.7z
+Makefile
 __pycache__/
-/??-?/
-/OSF-?/
-/NowarRoundedTypeface/
+/source/rhr/*.ttf
+/build/
+/out/

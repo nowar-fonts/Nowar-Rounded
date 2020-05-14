@@ -5,8 +5,8 @@ import cmath
 
 samePointThreshold = 3
 
-outerRadii = { 'ExtraLight': 30, 'Light': 45, 'Regular': 60, 'Medium': 75, 'Bold': 105, 'ExtraBold': 120 }
-innerRadii = { 'ExtraLight': 5, 'Light': 5, 'Regular': 5, 'Medium': 5, 'Bold': 5, 'ExtraBold': 5 }
+outerRadii = { 200: 30, 300: 45, 400: 60, 500: 75, 600: 90, 700: 105, 800: 120 }
+innerRadii = { 200: 5, 300: 5, 400: 5, 500: 5, 600: 5, 700: 5, 800: 5 }
 
 def ComplexVector(point1, point2):
 	return complex(point2['x'] - point1['x'], point2['y'] - point1['y'])
@@ -264,159 +264,16 @@ def RoundGlyph(glyph, outerRadius, innerRadius):
 		
 		MergeNearPoints(contour)
 
-def NormalizeStyle(width, weight):
 
-	isStandardStyle = weight in ['Regular', 'Italic', 'Bold', 'Bold Italic']
+if __name__ == '__main__':
+	param = sys.argv[1]
+	param = json.loads(param)
+	weight = param["weight"]
 
-	isItalic = weight.find('Italic') != -1
-	isRegular = weight == 'Regular'
-
-	isNormalWidth = width == ''
-	widthInFamily = '' if isNormalWidth else ' ' + width
-
-	if isStandardStyle:
-		f = widthInFamily
-		s = weight
-	elif isItalic:
-		f = widthInFamily + ' ' + weight.replace(' Italic', '')
-		s = 'Italic'
-	else:
-		f = widthInFamily + ' ' + weight
-		s = 'Regular'
-
-	if isNormalWidth:
-		ps = weight
-	else:
-		ps = width if isRegular else width + ' ' + weight
-
-	return (f, s, ps)
-
-# Name, Copyright and License
-def NameFont(font, width, weight, version):
-
-	(family, subfamily, preferredFamily) = NormalizeStyle(width, weight)
-
-	font['OS_2']['achVendID'] = 'Cyan'
-	font['name'] = [
-		{
-			"platformID": 3,
-			"encodingID": 1,
-			"languageID": 1033,
-			"nameID": 0,
-			"nameString": "Copyright © 2018—2019 Cyano Hao. Portions Copyright 2015 Google Inc."
-		},
-		{
-			"platformID": 3,
-			"encodingID": 1,
-			"languageID": 1033,
-			"nameID": 1,
-			"nameString": "Noto Rounded" + family
-		},
-		{
-			"platformID": 3,
-			"encodingID": 1,
-			"languageID": 1033,
-			"nameID": 2,
-			"nameString": subfamily
-		},
-		{
-			"platformID": 3,
-			"encodingID": 1,
-			"languageID": 1033,
-			"nameID": 3,
-			"nameString": "Noto Rounded " + preferredFamily + ' ' + str(version)
-		},
-		{
-			"platformID": 3,
-			"encodingID": 1,
-			"languageID": 1033,
-			"nameID": 4,
-			"nameString": "Noto Rounded " + preferredFamily
-		},
-		{
-			"platformID": 3,
-			"encodingID": 1,
-			"languageID": 1033,
-			"nameID": 5,
-			"nameString": str(version)
-		},
-		{
-			"platformID": 3,
-			"encodingID": 1,
-			"languageID": 1033,
-			"nameID": 6,
-			"nameString": "Noto-Rounded-" + preferredFamily.replace(' ', '-')
-		},
-		{
-			"platformID": 3,
-			"encodingID": 1,
-			"languageID": 1033,
-			"nameID": 8,
-			"nameString": "Cyano Hao"
-		},
-		{
-			"platformID": 3,
-			"encodingID": 1,
-			"languageID": 1033,
-			"nameID": 9,
-			"nameString": "Cyano Hao; Monotype Design Team"
-		},
-		{
-			"platformID": 3,
-			"encodingID": 1,
-			"languageID": 1033,
-			"nameID": 11,
-			"nameString": "https://github.com/CyanoHao"
-		},
-		{
-			"platformID": 3,
-			"encodingID": 1,
-			"languageID": 1033,
-			"nameID": 13,
-			"nameString": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software."
-		},
-		{
-			"platformID": 3,
-			"encodingID": 1,
-			"languageID": 1033,
-			"nameID": 14,
-			"nameString": "http://scripts.sil.org/OFL"
-		},
-		{
-			"platformID": 3,
-			"encodingID": 1,
-			"languageID": 1033,
-			"nameID": 16,
-			"nameString": "Noto Rounded"
-		},
-		{
-			"platformID": 3,
-			"encodingID": 1,
-			"languageID": 1033,
-			"nameID": 17,
-			"nameString": preferredFamily
-		},
-	]
-
-def RoundFont(width, weight, version):
-
-	(_, _, preferredFamily) = NormalizeStyle(width, weight)
-	with open("sans/NotoSans-{}.otd".format(preferredFamily.replace(' ', '')), 'rb') as baseFile:
-		baseFont = json.loads(
-			baseFile.read().decode('UTF-8', errors='replace'))
-
-	NameFont(baseFont, width, weight, version)
+	baseFont = json.load(sys.stdin)
 
 	for (_, glyph) in baseFont['glyf'].items():
 		RoundGlyph(glyph, outerRadii[weight], innerRadii[weight])
 
-	# output
-	outStr = json.dumps(baseFont, ensure_ascii=False)
-	with open("rounded/NotoRounded-{}.otd".format(width + weight.replace(' ', '')), 'w') as outFile:
-		outFile.write(outStr)
-
-if __name__ == '__main__':
-	width = sys.argv[1]
-	weight = sys.argv[2]
-	version = sys.argv[3]
-	RoundFont(width, weight, version)
+	outStr = json.dumps(baseFont, ensure_ascii=False, separators=(',', ':'))
+	sys.stdout.write(outStr)
